@@ -1,46 +1,5 @@
 body {
-  font-family: Arial, Helvetica, sans-serif; }
-
-.header {
-  height: 600px;
-  background-image: url("./../images/header-background.png");
-  background-position: center center;
-  background-size: cover;
-  color: white;
-  overflow: hidden; }
-
-.header__container {
-  width: 1000px;
-  margin: 0 auto;
-  height: 100%;
-  display: flex;
-  justify-content: space-between; }
-
-.header__container--left {
-  width: 60%;
-  margin-top: 200px; }
-
-.header__container--right {
-  width: 40%;
-  align-self: flex-end; }
-
-.header__mockup {
-  width: 100%;
-  margin-bottom: -4px; }
-
-.header__logo {
-  display: block; }
-
-.header__platform {
-  background-color: black;
-  display: inline-block;
-  width: 55px;
-  height: 55px;
-  border-radius: 50%; }
-
-.header__description {
-  font-size: 24px;
-  font-weight: bold; }
+  background-color: red; }
 
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
