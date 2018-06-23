@@ -26,7 +26,7 @@
                 </a>
                 <ul class="navigation__items">
                     <a href="#"><li class="navigation__item">Naslovnica</li></a>
-                    <a href="../ponuda-motora.php"><li class="navigation__item">Ponuda motora</li></a>
+                    <a href="<cms:link 'ponuda-motora.php' />"><li class="navigation__item">Ponuda motora</li></a>
                     <a href="#"><li class="navigation__item">Način plaćanja</li></a>
                 </ul>
             </div>
