@@ -66,6 +66,7 @@ li {
 
 .vehicle {
   width: 85%;
+  overflow: hidden;
   background-color: white;
   margin-top: -90px;
   margin-left: auto;
@@ -74,28 +75,64 @@ li {
   box-shadow: 0 7px 23px 0 rgba(15, 43, 55, 0.1); }
 
 .vehicle__header-container {
-  display: flex; }
+  border-bottom: solid 3px #979797; }
 
 .vehicle__main-info {
-  display: inline-block;
+  display: block;
+  float: left;
+  width: calc(100% - 330px - 60px);
   padding: 40px 0 40px 60px;
   background-color: rgba(245, 245, 245, 0.36); }
   .vehicle__main-info .main-info__characteristics {
     display: inline-block; }
   .vehicle__main-info .main-info__characteristic {
-    display: inline-block; }
+    display: inline-block;
+    text-align: center;
+    margin-right: 85px; }
+    .vehicle__main-info .main-info__characteristic:last-child {
+      margin-right: 0px; }
     .vehicle__main-info .main-info__characteristic img {
       width: 55px;
-      display: block; }
+      display: block;
+      margin: 0 auto; }
     .vehicle__main-info .main-info__characteristic span {
       display: block; }
+    .vehicle__main-info .main-info__characteristic h2 {
+      margin: 0; }
+  .vehicle__main-info .main-info__text {
+    display: inline-block; }
+    .vehicle__main-info .main-info__text .vehicle-model {
+      margin: 0; }
 
 .vehicle__price-contact {
   width: 330px;
-  display: inline-block; }
+  display: inline-block;
+  float: right; }
 
-.vehicle__price-container, .vehicle__contact-container {
-  height: 90px; }
+.vehicle__price-container {
+  background-color: #5eb66f;
+  box-shadow: 0 7px 23px 0 rgba(15, 43, 55, 0.1);
+  padding: 25px; }
+  .vehicle__price-container span {
+    display: block; }
+    .vehicle__price-container span:last-child {
+      display: inline-block; }
+  .vehicle__price-container h3 {
+    display: inline-block;
+    margin: 0; }
+
+.vehicle__contact-container {
+  background-color: red;
+  padding: 25px; }
+  .vehicle__contact-container img {
+    width: 40px;
+    display: inline-block; }
+  .vehicle__contact-container .vehicle__contact img {
+    width: 14px; }
+  .vehicle__contact-container .vehicle__contact {
+    display: inline-block; }
+    .vehicle__contact-container .vehicle__contact span {
+      display: block; }
 
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
