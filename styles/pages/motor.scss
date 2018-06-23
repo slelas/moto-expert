@@ -80,7 +80,6 @@ li {
 }
 
 .header {
-    background-image: url('/images/moto-guzzi.jpg');
     height: 544px;
     background-repeat: no-repeat;
     background-position: center center;
@@ -369,4 +368,12 @@ li {
 
 .footer__fuel {
     font-weight: 900;
+}
+
+.green {
+    color: green !important;
+}
+
+.orange {
+    color: orange !important;
 }

@@ -30,7 +30,7 @@
     // -4.5   Venezuela (UTC-04:30)
     // -6     United States (Central Time) (UTC-06:00)
     // -8     United States (Pacific Time) (UTC-08:00)
-    define( 'K_GMT_OFFSET', +5.5 );
+    define( 'K_GMT_OFFSET', +1 );
 
     // 3.
     // Define the charset used by your site. If in any doubt, leave the default utf-8.
@@ -85,6 +85,7 @@
     // Folder containing the embedded snippets if not using the default 'snippets' folder within 'couch'.
     // Should be relative to your site. No leading or trailing slashes please.
     //define( 'K_SNIPPETS_DIR', 'mysnippets' );
+    define( 'K_SNIPPETS_DIR', '' );
 
     // 13.
     // Your Email address. Will be used in contact forms.

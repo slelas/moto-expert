@@ -1,3 +1,4 @@
+<?php require_once( 'couch/cms.php' ); ?>
 <!DOCTYPE html>
 <html lang="hr">
     <head>
@@ -18,7 +19,7 @@
                 </a>
                 <ul class="navigation__items">
                     <a href="#"><li class="navigation__item">Naslovnica</li></a>
-                    <a href="#"><li class="navigation__item">Ponuda motora</li></a>
+                    <a href="../ponuda-motora.php"><li class="navigation__item">Ponuda motora</li></a>
                     <a href="#"><li class="navigation__item">Način plaćanja</li></a>
                 </ul>
             </div>
@@ -49,13 +50,15 @@
         </header>
         <div class="motor-list">
             <h2 class="motor-list__title">Lista motora</h2>
-            <div class="motor-list__card">
-                <div class="card__image"></div>
+            <cms:pages masterpage='motor.php' >
+            <a class="motor-list__card" href="<cms:show k_page_link />">
+                <div class="card__image" style='background-image: url("<cms:show motor_slika />");'></div>
                 <div class="card__container">
                     <div class="card__main-info">
-                        <span class="card__main-info__category">POLOVNO</span>
-                        <h3>Honda Forza 300</h3>
-                        <span class="publish-date"><b>Objavljeno:</b> 21.03.2018.</span>
+                        <span class="card__main-info__category <cms:if k_page_foldertitle=='U DOLASKU'>orange</cms:if>
+                        <cms:if k_page_foldertitle=='NOVO'>green</cms:if>"><cms:show k_page_foldertitle /></span>
+                        <h3><cms:show k_page_title /></h3>
+                        <span class="publish-date"><b>Objavljeno:</b> <cms:date k_page_date format='d.m.Y.' /></span>
                     </div>
                     <div class="card__specifications">
                         <div class="card__specification">
@@ -93,52 +96,8 @@
                         <span class="card__price-eur">4.300 €</span>
                     </div>
                 </div>
-            </div>
-            <div class="motor-list__card">
-                <div class="card__image"></div>
-                <div class="card__container">
-                    <div class="card__main-info">
-                        <span class="card__main-info__category">POLOVNO</span>
-                        <h3>Honda Forza 300</h3>
-                        <span class="publish-date"><b>Objavljeno:</b> 21.03.2018.</span>
-                    </div>
-                    <div class="card__specifications">
-                        <div class="card__specification">
-                            <img src="/images/circle.svg">
-                            <div class="vehicle__specification-text">
-                                <span class="specification-text__category">VLASNIK</span>
-                                <span class="specification-text__info">1. vlasnik</span>
-                            </div>
-                        </div>
-                        <div class="card__specification">
-                            <img src="/images/circle.svg">
-                            <div class="vehicle__specification-text">
-                                <span class="specification-text__category">VLASNIK</span>
-                                <span class="specification-text__info">1. vlasnik</span>
-                            </div>
-                        </div>
-                        <div class="card__specification">
-                            <img src="/images/circle.svg">
-                            <div class="vehicle__specification-text">
-                                <span class="specification-text__category">VLASNIK</span>
-                                <span class="specification-text__info">1. vlasnik</span>
-                            </div>
-                        </div>
-                        <div class="card__specification">
-                            <img src="/images/circle.svg">
-                            <div class="vehicle__specification-text">
-                                <span class="specification-text__category">VLASNIK</span>
-                                <span class="specification-text__info">1. vlasnik</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card__price-info">
-                        <span class="card__price">CIJENA</span>
-                        <span class="card__price-hrk">39.450 HRK</span>
-                        <span class="card__price-eur">4.300 €</span>
-                    </div>
-                </div>
-            </div>
+            </a>
+            </cms:pages>
         </div>
         <footer class="footer">
             <div class="footer__container clearfix">
@@ -170,3 +129,4 @@
         </footer>
     </body>
 </html>
+<?php COUCH::invoke(); ?>

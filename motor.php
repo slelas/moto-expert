@@ -1,4 +1,11 @@
 <?php require_once( 'couch/cms.php' ); ?>
+<cms:template title='Motori' clonable='1'>
+    <cms:editable name='motor_slika' type='image' />
+    <cms:folder name="novo" title="NOVO" />
+    <cms:folder name="rabljeno" title="RABLJENO" />
+    <cms:folder name="u_dolasku" title="U DOLASKU" />
+</cms:template>
+
 <!DOCTYPE html>
 <html lang="hr">
     <head>
@@ -19,21 +26,21 @@
                 </a>
                 <ul class="navigation__items">
                     <a href="#"><li class="navigation__item">Naslovnica</li></a>
-                    <a href="#"><li class="navigation__item">Ponuda motora</li></a>
+                    <a href="../ponuda-motora.php"><li class="navigation__item">Ponuda motora</li></a>
                     <a href="#"><li class="navigation__item">Način plaćanja</li></a>
                 </ul>
             </div>
         </nav>
-        <header class="header"></header>
+        <header class="header" style='background-image: url("<cms:show motor_slika />");'></header>
         <div class="vehicle">
             <div class="vehicle__header-container clearfix">
                 <div class="vehicle__main-info clearfix">
                     <div class="main-info__text">
-                        <span class="vehicle-type"><cms:editable name='kategorija_motora'>NOVO VOZILO</cms:editable></span>
+                        <span class="vehicle-type"><cms:show k_page_foldertitle /></span>
                         <h1 class="vehicle-model">
-                            <cms:editable name='model_motora'>Honda CB 1300</cms:editable>
+                            <cms:show k_page_title />
                         </h1>
-                        <span class="vehicle-publish">Objavljeno: 21.03.2018.</span>
+                        <span class="vehicle-publish"><b>Objavljeno:</b> <cms:date k_page_date format='d.m.Y.' /></span>
                     </div>
                     <div class="main-info__characteristics">
                         <div class="main-info__characteristic">
