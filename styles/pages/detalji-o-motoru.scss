@@ -2,6 +2,7 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 600;
     color: #1f1f1f;
+    background-color: #fafafa;
 }
 
 a {
@@ -23,6 +24,7 @@ li {
 .navigation {
     box-shadow: 0 2px 13px 0 rgba(186, 144, 144, 0.11);
     height: 70px;
+    background-color: white;
 
     .navigation__container {
         width: 85%;
@@ -86,7 +88,7 @@ li {
 }
 
 .vehicle {
-    margin-bottom: 100px;
+    margin-bottom: 55px;
     width: 85%;
     overflow: hidden;
     background-color: white;
@@ -238,6 +240,10 @@ li {
     padding: 30px 60px;
     border-bottom: solid 1px rgba(151, 151, 151, 0.1);
 
+    &:last-child {
+        border-bottom: none;
+    }
+
     h3 {
         margin: 0px;
         font-size: 30px;
@@ -283,4 +289,84 @@ li {
     margin-top: 30px;
     margin-right: 35px;
     box-shadow: 0 7px 23px 0 rgba(15, 43, 55, 0.1);
+}
+
+.footer {
+    border-top: solid 1px rgba(151, 151, 151, 0.1);
+}
+
+.footer__container {
+    width: 75%;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 50px;
+    position: relative;
+    border-bottom: solid 1px rgba(151, 151, 151, 0.1);
+}
+
+.footer__company-info {
+    float: left;
+    font-size: 14px;
+    color: #767676;
+    font-weight: 400;
+
+    img {
+        width: 115px;
+        display: block;
+    }
+
+    p {
+        margin: 0;
+    }
+
+    .company-info__container {
+        width: 230px;
+    }
+}
+
+.footer__contact {
+    float: right;
+
+    span {
+        display: block;
+    }
+
+    img {
+        width: 17px;
+    }
+}
+
+.footer__navigation {
+    text-align: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    font-weight: 400;
+    font-size: 16px;
+    color: #767676;
+    
+    li {
+        margin-right: 50px;
+
+        &:last-child {
+            margin-right: 0px;
+        }
+    }
+}
+
+.footer__signature {
+    margin: 25px auto;
+    text-align: center;
+    font-size: 14px;
+    color: #757575;
+}
+
+.footer__fire {
+    display: block;
+}
+
+.footer__fuel {
+    font-weight: 900;
 }
