@@ -1,0 +1,199 @@
+<?php require_once( 'couch/cms.php' ); ?>
+<!DOCTYPE html>
+<html lang="hr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="/dist/main.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,900" rel="stylesheet">
+        <title>Moto Expert</title>
+    </head>
+    <body>
+        <nav class="navigation">
+            <div class="navigation__container clearfix">
+                <img class="navigation__logo" src="/images/moto-expert-logo.svg" alt="Moto Expert logo">
+                <a class="navigation__button" href="#">
+                    <img class="button__icon" src="/images/send-message-icon.svg" alt="Send message icon">
+                    <span class="button__text">Kontaktiraj nas</span>
+                </a>
+                <ul class="navigation__items">
+                    <a href="#"><li class="navigation__item">Naslovnica</li></a>
+                    <a href="#"><li class="navigation__item">Ponuda motora</li></a>
+                    <a href="#"><li class="navigation__item">Način plaćanja</li></a>
+                </ul>
+            </div>
+        </nav>
+        <header class="header"></header>
+        <div class="vehicle">
+            <div class="vehicle__header-container clearfix">
+                <div class="vehicle__main-info clearfix">
+                    <div class="main-info__text">
+                        <span class="vehicle-type"><cms:editable name='kategorija_motora'>NOVO VOZILO</cms:editable></span>
+                        <h1 class="vehicle-model">
+                            <cms:editable name='model_motora'>Honda CB 1300</cms:editable>
+                        </h1>
+                        <span class="vehicle-publish">Objavljeno: 21.03.2018.</span>
+                    </div>
+                    <div class="main-info__characteristics">
+                        <div class="main-info__characteristic">
+                            <img src="/images/circle.svg">
+                            <span>SNAGA</span>
+                            <h2>85 kW</h2>
+                        </div>
+                        <div class="main-info__characteristic">
+                            <img src="/images/circle.svg">
+                            <span>SNAGA</span>
+                            <h2>85 kW</h2>
+                        </div>
+                        <div class="main-info__characteristic">
+                            <img src="/images/circle.svg">
+                            <span>SNAGA</span>
+                            <h2>85 kW</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="vehicle__price-contact">
+                    <div class="vehicle__price-container">
+                        <span>CIJENA</span>
+                        <h3>39.450 HRK</h3>
+                        <span>4.300 €</span>
+                    </div>
+                    <div class="vehicle__contact-container">
+                        <img src="/images/circle.svg">
+                        <div class="vehicle__contact">
+                            <span>Želiš kupiti ovaj motor?</span>
+                            <a href="#">Javi nam se</a>
+                            <img src="/images/send-message-icon-black.svg" alt="Send message icon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="vehicle__specifications-section">
+                <h3>Specifikacije vozila</h3>
+                <div class="vehicle__specifications">
+                    <div class="vehicle__specification">
+                        <img src="/images/circle.svg" alt="">
+                        <div class="vehicle__specification-text">
+                            <span class="specification-text__category">STANJE</span>
+                            <span class="specification-text__info">Novo</span>
+                        </div>
+                    </div>
+                    <div class="vehicle__specification">
+                        <img src="/images/circle.svg" alt="">
+                        <div class="vehicle__specification-text">
+                            <span class="specification-text__category">SNAGA</span>
+                            <span class="specification-text__info">85 kW</span>
+                        </div>
+                    </div>
+                    <div class="vehicle__specification">
+                        <img src="/images/circle.svg" alt="">
+                        <div class="vehicle__specification-text">
+                            <span class="specification-text__category">BOJA</span>
+                            <span class="specification-text__info">Crna</span>
+                        </div>
+                    </div>
+                    <div class="vehicle__specification">
+                        <img src="/images/circle.svg" alt="">
+                        <div class="vehicle__specification-text">
+                            <span class="specification-text__category">MODEL</span>
+                            <span class="specification-text__info">CB 1300 ABS</span>
+                        </div>
+                    </div>
+                    <div class="vehicle__specification">
+                        <img src="/images/circle.svg" alt="">
+                        <div class="vehicle__specification-text">
+                            <span class="specification-text__category">OBUJAM MOTORA</span>
+                            <span class="specification-text__info">1284 cm3</span>
+                        </div>
+                    </div>
+                    <div class="vehicle__specification">
+                        <img src="/images/circle.svg" alt="">
+                        <div class="vehicle__specification-text">
+                            <span class="specification-text__category">VLASNIK</span>
+                            <span class="specification-text__info">1. vlasnik</span>
+                        </div>
+                    </div>
+                    <div class="vehicle__specification">
+                        <img src="/images/circle.svg" alt="">
+                        <div class="vehicle__specification-text">
+                            <span class="specification-text__category">VRSTA MOTORA</span>
+                            <span class="specification-text__info">Četverotaktni</span>
+                        </div>
+                    </div>
+                    <div class="vehicle__specification">
+                        <img src="/images/circle.svg" alt="">
+                        <div class="vehicle__specification-text">
+                            <span class="specification-text__category">KILOMETRI</span>
+                            <span class="specification-text__info">63 000 km</span>
+                        </div>
+                    </div>
+                    <div class="vehicle__specification">
+                        <img src="/images/circle.svg" alt="">
+                        <div class="vehicle__specification-text">
+                            <span class="specification-text__category">PRVA REGISTRACIJA</span>
+                            <span class="specification-text__info">2017.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="vehicle__equipment-section">
+                <h3>Dodatna oprema vozila</h3>
+                <p>Lorem Khaled Ipsum is a major key to success. The key to success is to keep your head above the water, never give up. You smart, you loyal, you a genius. It’s on you how you want to live your life.</p>
+                <div class="vehicle__equipment-card">
+                    <span>ABS sustav</span>
+                    <img src="/images/like-icon.png" alt="">
+                </div>
+                <div class="vehicle__equipment-card">
+                    <span>ABS sustav</span>
+                    <img src="/images/like-icon.png" alt="">
+                </div>
+                <div class="vehicle__equipment-card">
+                    <span>ABS sustav</span>
+                    <img src="/images/like-icon.png" alt="">
+                </div>
+            </div>
+            <div class="vehicle__equipment-section">
+                <h3>Opis</h3>
+                <p>Lorem Khaled Ipsum is a major key to success. Look at the sunset, life is amazing, life is beautiful, life is what you make it. We the best. Egg whites, turkey sausage, wheat toast, water. Of course they don’t want us to eat our breakfast, so we are going to enjoy our breakfast. You see the hedges, how I got it shaped up? It’s important to shape up your hedges, it’s like getting a haircut, stay fresh. Cloth talk. The first of the month is coming, we have to get money, we have no choice. It cost money to eat and they don’t want you to eat.</p>
+            </div>
+            <div class="vehicle__equipment-section">
+                <h3>Fotografije</h3>
+                <img class="vehicle__photo" src="/images/moto-guzzi.jpg" alt="">
+                <img class="vehicle__photo" src="/images/moto-guzzi.jpg" alt="">
+                <img class="vehicle__photo" src="/images/moto-guzzi.jpg" alt="">
+                <img class="vehicle__photo" src="/images/moto-guzzi.jpg" alt="">
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="footer__container clearfix">
+                <div class="footer__company-info">
+                    <img src="/images/moto-expert-logo.svg">
+                    <div class="company-info__container">
+                        <span>Moto Expert d.o.o.</span>
+                        <p>OIB: 50235560247; MB: 04654293</p>
+                        <p>Žiro račun: 2360000 – 1102192162 kod Zagrebačke banke d.d.</p>
+                    </div>
+                </div>
+                <div class="footer__contact">
+                    <span>Kontaktirajte nas</span>
+                    <span>+385 98 299 055</span>
+                    <span>info@motoexpert.hr</span>
+                    <img src="/images/circle.svg" alt="">
+                    <img src="/images/circle.svg" alt="">
+                </div>
+                <ul class="footer__navigation">
+                    <li>Naslovnica</li>
+                    <li>Motori</li>
+                    <li>Način plaćanja</li>
+                    <li>Kontakt</li>
+                </ul>
+            </div>
+            <div class="footer__signature">
+                <span class="footer__fire">Made with 🔥</span>
+                <span class="footer__fuel">FUEL AGENCY</span>
+            </div>
+        </footer>
+    </body>
+</html>
+<?php COUCH::invoke(); ?>
