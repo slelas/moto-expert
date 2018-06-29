@@ -105,7 +105,6 @@ li {
     .vehicle__main-info .main-info__characteristic h2 {
       margin: 0; }
   .vehicle__main-info .main-info__text {
-    display: inline-block;
     float: left;
     width: 40%; }
     .vehicle__main-info .main-info__text .vehicle-model {
@@ -113,7 +112,6 @@ li {
 
 .vehicle__price-contact {
   width: 330px;
-  display: inline-block;
   float: right; }
 
 .vehicle__price-container {
@@ -380,6 +378,103 @@ body {
     color: #f1392f;
     font-weight: 900;
     font-size: 14px; }
+
+.contact__container {
+  width: 85%;
+  margin: 0 auto;
+  margin-top: -100px; }
+
+.contact__left-container {
+  background-color: white;
+  border-radius: 3px;
+  box-shadow: 0 7px 23px 0 rgba(15, 43, 55, 0.1);
+  display: inline-block;
+  width: calc(100% - 330px); }
+  .contact__left-container h3 {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 600;
+    color: #1f1f1f; }
+  .contact__left-container p {
+    font-size: 18px;
+    color: #574c4c; }
+  .contact__left-container span {
+    font-size: 20px;
+    font-weight: 600; }
+
+.contact__reason-container {
+  display: flex;
+  justify-content: space-between; }
+
+.contact__reason {
+  width: 140px;
+  height: 140px;
+  border-radius: 8px;
+  background-color: #f1392f;
+  display: inline-block; }
+
+.contact__right-container {
+  width: calc(300px - 30px);
+  background-color: white;
+  border-radius: 3px;
+  box-shadow: 0 7px 23px 0 rgba(15, 43, 55, 0.1);
+  float: right;
+  display: inline-block;
+  padding: 15px 20px; }
+  .contact__right-container .right-container__description {
+    font-size: 17px;
+    font-weight: 400; }
+  .contact__right-container .right-container__title {
+    font-weight: 900;
+    font-size: 15px;
+    color: #000; }
+  .contact__right-container .right-container__contact {
+    display: flex;
+    align-items: center; }
+    .contact__right-container .right-container__contact img {
+      width: 20px;
+      margin-right: 20px; }
+    .contact__right-container .right-container__contact span {
+      font-size: 17px;
+      font-weight: 400; }
+
+.contact__input-container {
+  padding: 35px 85px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+
+.contact__input {
+  display: inline-block;
+  width: 47%; }
+  .contact__input span {
+    display: block; }
+  .contact__input input:focus {
+    border-radius: 8px;
+    box-shadow: 0 0 8px 0 rgba(241, 57, 47, 0.19);
+    background-color: #ffffff;
+    border: solid 2px #f1392f;
+    outline: none; }
+  .contact__input input {
+    padding: 20px;
+    border-radius: 8px;
+    background-color: rgba(181, 181, 200, 0.05);
+    border: solid 2px rgba(181, 181, 200, 0.43);
+    font-size: 18px;
+    width: calc(100% - 40px); }
+
+.contact__input-info {
+  padding: 35px 85px;
+  border-bottom: 1px solid rgba(151, 151, 151, 0.5); }
+
+.message {
+  display: block;
+  min-height: 100px;
+  width: 100%;
+  margin-bottom: 80px; }
+  .message textarea {
+    height: 100%;
+    width: 100%; }
 
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
