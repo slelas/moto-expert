@@ -281,7 +281,6 @@ html {
 .vehicle__specification-container {
   width: 20px;
   height: 20px;
-  display: inline-block;
   float: left;
   margin-right: 10px; }
 
