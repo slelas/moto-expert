@@ -124,7 +124,7 @@ html {
     .main-info__characteristic {
         display: inline-block;
         text-align: center;
-        margin-right: 85px;
+        width: 30%;
 
         &:last-child {
             margin-right: 0px;
@@ -166,11 +166,10 @@ html {
 
     .main-info__text {
         float: left;
-        width: 40%;
+        width: 35%;
 
         .vehicle-model {
             margin: 10px 0px;
-            width: 80%;
             font-size: 36px;
             font-weight: 600;
             color: #1f1f1f;
@@ -362,7 +361,7 @@ html {
     display: flex;
     align-content: space-between;
     flex-wrap: wrap;
-    width: 50%;
+    width: 600px;
     margin-left: 35px;
 }
 
@@ -419,7 +418,6 @@ html {
     p {
         font-weight: 400;
         font-size: 18px;
-        width: 830px;
     }
 }
 
@@ -543,4 +541,266 @@ html {
 
 .orange {
     color: orange !important;
+}
+
+@media screen and (max-width: 1330px) {
+    .vehicle__main-info {
+        width: calc(100% - 270px - 60px);
+
+        .main-info__text {
+            .vehicle-type, .vehicle-publish {
+                font-size: 14px;
+            }
+
+            .vehicle-model {
+                font-size: 30px;
+            }
+        }
+
+        .main-info__characteristic-img {
+            width: 40px;
+            height: 40px;
+        }
+
+        .main-info__characteristic {
+            span {
+                font-size: 12px;
+                margin-top: 10px;
+            }
+
+            h2 {
+                font-size: 16px;
+            }
+        }
+    }
+
+    .vehicle__price-contact {
+        width: 270px;
+    }
+
+    .vehicle__price-container {
+        span {
+            font-size: 14px;
+
+            &:nth-of-type(2) {
+                font-size: 16px;
+            }
+        }
+
+        h3 {
+            font-size: 30px;
+        }
+    }
+
+    .vehicle__contact-container {
+        .vehicle__contact {
+            font-size: 15px;
+    
+            span {
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .vehicle {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .vehicle__main-info {
+        width: 100%;
+    }
+
+    .vehicle__header-container {
+        display: block;
+    }
+
+    .vehicle__main-info {
+        width: calc(100% - 120px);
+        display: flex;
+        padding: 40px 60px;
+
+        .main-info__characteristics {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    .vehicle__price-contact {
+        width: 100%;
+        display: flex;
+    }
+
+    .vehicle__price-container {
+        height: 100%;
+        width: calc(50% - 85px);
+        padding-left: 60px;
+    }
+
+    .vehicle__contact-container {
+        height: auto;
+        width: calc(50% - 50px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .vehicle__main-info {
+        display: block;
+
+        .main-info__text {
+            display: block;
+            float: none;
+            width: auto;
+        }
+
+        .main-info__characteristics {
+            width: 100%;
+            margin-top: 40px;
+        }
+    }
+
+    .vehicle__specifications {
+        width: 500px;
+
+        .specification-text__info {
+            font-size: 16px;
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .vehicle__main-info {
+        padding: 20px;
+        width: calc(100% - 40px);
+
+        .main-info__characteristics {
+            margin-top: 20px;
+        }
+    }
+
+    .vehicle__price-container {
+        padding: 20px;
+        height: auto;
+        width: calc(50% - 40px);
+    }
+
+    .vehicle__contact-container {
+        height: auto;
+        width: calc(50% - 40px);
+        padding: 20px;
+    }
+
+    .vehicle__specifications-section {
+        padding: 20px;
+
+        h3 {
+            font-size: 26px;
+        }
+    }
+
+    .vehicle__specifications {
+        margin-left: 15px;
+    }
+
+    .vehicle__equipment-section {
+        padding: 20px;
+
+        h3 {
+            font-size: 26px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+    }
+
+    .vehicle__equipment-card {
+        padding: 15px 20px;
+    }
+
+    .vehicle {
+        padding-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .header {
+        height: 265px;
+    }
+
+    .vehicle__main-info {
+        padding: 15px;
+
+        .main-info__characteristic {
+            span {
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis; // BITNO!
+            }
+        }
+    }
+
+    .vehicle__specifications-section {
+        padding: 15px;
+    }
+
+    .vehicle__specifications {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .vehicle__specification {
+        width: 50%;
+        margin-top: 25px;
+
+        .specification-text__info {
+            font-size: 20px;
+            display: block;
+            word-wrap: break-word; // BITNO!
+        }
+    }
+
+    .vehicle__specification-text {
+        width: calc(100% - 40px); // BITNO!
+    }
+
+    .vehicle__equipment-section {
+        padding: 15px;
+    }
+
+    .vehicle__price-contact {
+        display: block;
+        position: fixed;
+        z-index: 100;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .vehicle__price-container {
+        display: block;
+        width: calc(100% - 40px);
+        border-top-right-radius: 3px;
+        border-top-left-radius: 3px;
+    }
+
+    .vehicle__contact-container {
+        display: none;
+    }
+
+    .mobile-flex {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: start;
+    }
+
+    .vehicle__photo {
+        max-width: 48%;
+        margin-right: 0;
+        margin-top: 15px;
+    }
 }
