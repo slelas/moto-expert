@@ -17,6 +17,26 @@ ul {
 li {
   display: inline-block; }
 
+#menu-toggle {
+  display: none; }
+
+.hamburger-container, .cross-container {
+  float: right;
+  display: none; }
+
+.hamburger, .cross {
+  height: 33px;
+  margin-top: 18px; }
+
+.navigation {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 10; }
+  .navigation .navigation__button {
+    display: none; }
+
 .navigation {
   box-shadow: 0 2px 13px 0 rgba(186, 144, 144, 0.11);
   height: 70px;
@@ -64,7 +84,8 @@ li {
   height: 544px;
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover; }
+  background-size: cover;
+  margin-top: 70px; }
 
 .vehicle {
   margin-bottom: 55px;
@@ -358,14 +379,27 @@ html {
   .footer__company-info p {
     margin: 0; }
   .footer__company-info .company-info__container {
-    width: 230px; }
+    width: 230px;
+    margin-top: 10px; }
 
 .footer__contact {
   float: right; }
   .footer__contact span {
-    display: block; }
+    display: block;
+    color: #767676; }
+    .footer__contact span:nth-child(1), .footer__contact span:nth-child(2) {
+      font-size: 18px;
+      font-weight: 600; }
+    .footer__contact span:nth-child(2) {
+      margin-top: 20px; }
+    .footer__contact span:nth-child(3) {
+      font-size: 16px;
+      font-weight: 400;
+      margin-top: 7px; }
   .footer__contact img {
-    width: 17px; }
+    width: 17px;
+    margin-top: 16px;
+    margin-right: 16px; }
 
 .footer__navigation {
   text-align: center;
@@ -429,7 +463,21 @@ html {
 
 @media screen and (max-width: 1080px) {
   .vehicle {
-    width: 95%; } }
+    width: 95%; }
+  .footer__container {
+    width: 95%; }
+  .header {
+    height: 400px; }
+  .navigation .navigation__button {
+    padding: 8px 20px;
+    margin-top: 18px; }
+    .navigation .navigation__button .button__text {
+      font-size: 16px; }
+    .navigation .navigation__button .button__icon {
+      height: 12px; }
+  .navigation .navigation__items .navigation__item {
+    padding-left: 10px;
+    padding-right: 10px; } }
 
 @media screen and (max-width: 1000px) {
   .vehicle__main-info {
@@ -454,6 +502,40 @@ html {
     height: auto;
     width: calc(50% - 50px); } }
 
+@media screen and (max-width: 900px) {
+  .navigation .navigation__button {
+    display: none; }
+  .navigation .navigation__items {
+    display: none; }
+    .navigation .navigation__items a {
+      width: 100%; }
+    .navigation .navigation__items .navigation__item {
+      padding: 0;
+      border: none;
+      font-size: 26px;
+      margin-top: 50px; }
+  .hamburger-container {
+    display: block; }
+  #menu-toggle:checked ~ .hamburger-container {
+    display: none; }
+  #menu-toggle:checked ~ .cross-container {
+    display: block; }
+  #menu-toggle:checked ~ .navigation__items {
+    display: flex;
+    flex-wrap: wrap;
+    position: fixed;
+    align-content: flex-start;
+    left: 0;
+    right: 0;
+    top: 70px;
+    bottom: 0;
+    width: 100%;
+    z-index: 10;
+    margin: 0;
+    background-color: white; }
+  label {
+    cursor: pointer; } }
+
 @media screen and (max-width: 768px) {
   .vehicle__main-info {
     display: block; }
@@ -467,7 +549,14 @@ html {
   .vehicle__specifications {
     width: 500px; }
     .vehicle__specifications .specification-text__info {
-      font-size: 16px; } }
+      font-size: 16px; }
+  .footer__container {
+    width: 85%;
+    /* width: calc(100% - 40px);
+        padding: 25px 20px; 
+        margin-top: 0;*/ }
+  .footer__navigation {
+    display: none; } }
 
 @media screen and (max-width: 700px) {
   .vehicle__main-info {
@@ -503,8 +592,16 @@ html {
 @media screen and (max-width: 600px) {
   .header {
     height: 265px; }
+  .vehicle {
+    margin-bottom: 20px; }
+  .footer__container {
+    margin-top: 20px;
+    padding-bottom: 20px; }
+  .footer__signature {
+    margin-bottom: 120px; }
   .vehicle__main-info {
-    padding: 15px; }
+    padding: 15px;
+    width: calc(100% - 30px); }
     .vehicle__main-info .main-info__characteristic span {
       white-space: nowrap;
       overflow: hidden;
@@ -528,7 +625,7 @@ html {
   .vehicle__price-contact {
     display: block;
     position: fixed;
-    z-index: 100;
+    z-index: 8;
     bottom: 0;
     left: 0;
     right: 0; }
@@ -548,6 +645,25 @@ html {
     max-width: 48%;
     margin-right: 0;
     margin-top: 15px; } }
+
+@media screen and (max-width: 450px) {
+  .footer__company-info {
+    float: none; }
+  .footer__contact {
+    float: none;
+    margin-top: 30px; } }
+
+@media screen and (max-width: 375px) {
+  .vehicle__main-info .main-info__characteristic h2 {
+    font-size: 14px; }
+  .vehicle__specification .specification-text__info {
+    font-size: 16px; } }
+
+@media screen and (max-width: 350px) {
+  .vehicle__equipment-section .vehicle__photo {
+    max-width: 100%; }
+  .vehicle__equipment-card span {
+    font-size: 18px; } }
 
 body {
   z-index: -3; }
