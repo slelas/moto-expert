@@ -154,7 +154,8 @@ html {
       margin: 10px 0px;
       font-size: 36px;
       font-weight: 600;
-      color: #1f1f1f; }
+      color: #1f1f1f;
+      word-break: break-word; }
     .vehicle__main-info .main-info__text .vehicle-type {
       letter-spacing: 4.3px;
       color: #5eb66f;
