@@ -1,9 +1,59 @@
 <?php require_once( 'couch/cms.php' ); ?>
 <cms:template title='Motori' clonable='1'>
     <cms:editable name='motor_slika' type='image' />
-    <cms:folder name="novo" title="NOVO" />
-    <cms:folder name="rabljeno" title="RABLJENO" />
-    <cms:folder name="u_dolasku" title="U DOLASKU" />
+    <cms:folder name="novo" title="Novo" />
+    <cms:folder name="rabljeno" title="Rabljeno" />
+    <cms:folder name="u_dolasku" title="U dolasku" />
+    <cms:repeatable name='kurac' label='kurac'>
+        <cms:editable name='kurcina' type='text' />
+    </cms:repeatable>
+    <cms:editable
+        name='snaga_motora'
+        label='Snaga motora'
+        desc='u kW'
+        type='text'>
+    </cms:editable>
+    <cms:editable
+        name='boja_motora'
+        label='Boja motora'
+        type='text'>
+    </cms:editable>
+    <cms:editable
+        name='model_motora'
+        label='Model motora'
+        desc='u kW'
+        type='text'>
+    </cms:editable>
+    <cms:editable
+        name='obujam_motora'
+        label='Obujam motora'
+        desc='u cm3'
+        type='text'>
+    </cms:editable>
+    <cms:editable
+        name='vlasnik'
+        label='Broj vlasnika motora'
+        desc='1. vlasnik, 2. vlasnik...'
+        type='text'>
+    </cms:editable>
+    <cms:editable
+        name='vrsta_motora'
+        label='Vrsta motora'
+        desc='npr. dvotaktni ili četverotaktni'
+        type='text'>
+    </cms:editable>
+    <cms:editable
+        name='kilometri'
+        label='Broj kilometara'
+        desc='pisati bez km na kraju'
+        type='text'>
+    </cms:editable>
+    <cms:editable
+        name='registracija'
+        label='Prva registracija'
+        desc='2008.'
+        type='text'>
+    </cms:editable>
     <cms:editable 
         type='reverse_relation' 
         name='motor_images'
@@ -11,6 +61,24 @@
         field='motor_image' 
         anchor_text='View images' 
         label='Gallery'
+    />
+    <cms:editable
+        name="prva_specifikacija"
+        label="Prva istaknuta specifikacija" desc=""
+        opt_values='Snaga | Boja | Obujam motora | Vlasnik | Vrsta motora | Kilometri | Prva registracija'
+        type='radio'
+    />
+    <cms:editable
+        name="druga_specifikacija"
+        label="Druga istaknuta specifikacija" desc=""
+        opt_values='Snaga | Boja | Obujam motora | Vlasnik | Vrsta motora | Kilometri | Prva registracija'
+        type='radio'
+    />
+    <cms:editable
+        name="treca_specifikacija"
+        label="Treća istaknuta specifikacija" desc="Odaberite 3 istaknute specifikacije vozila"
+        opt_values='Snaga | Boja | Obujam motora | Vlasnik | Vrsta motora | Kilometri | Prva registracija'
+        type='radio'
     />
 </cms:template>
 
@@ -57,25 +125,157 @@
                     </div>
                     <div class="main-info__characteristics">
                         <div class="main-info__characteristic">
-                            <div class="main-info__characteristic-img">
-                                <img src="/images/motor/vrsta-motora.png">
-                            </div>
-                            <span>VRSTA MOTORA</span>
-                            <h2>Četverotaktni</h2>
+                            <cms:if prva_specifikacija = 'Snaga' >
+                                <div class="main-info__characteristic-img">
+                                    <img src="/images/motor/snaga.png">
+                                </div>
+                                <span>SNAGA</span>
+                                <h2><cms:show snaga_motora /> kW</h2>
+                            </cms:if>
+                            <cms:if prva_specifikacija = 'Boja' >
+                                <div class="main-info__characteristic-img">
+                                    <img src="/images/motor/boja.png">
+                                </div>
+                                <span>BOJA</span>
+                                <h2><cms:show boja_motora /></h2>
+                            </cms:if>
+                            <cms:if prva_specifikacija = 'Obujam motora' >
+                                <div class="main-info__characteristic-img">
+                                    <img src="/images/motor/obujam-motora.png">
+                                </div>
+                                <span>OBUJAM MOTORA</span>
+                                <h2><cms:show obujam_motora /> cm3</h2>
+                            </cms:if>
+                            <cms:if prva_specifikacija = 'Vlasnik' >
+                                <div class="main-info__characteristic-img">
+                                    <img src="/images/motor/vlasnik.png">
+                                </div>
+                                <span>VLASNIK</span>
+                                <h2><cms:show vlasnik /></h2>
+                            </cms:if>
+                            <cms:if prva_specifikacija = 'Vrsta motora' >
+                                <div class="main-info__characteristic-img">
+                                    <img src="/images/motor/vrsta-motora.png">
+                                </div>
+                                <span>VRSTA MOTORA</span>
+                                <h2><cms:show vrsta_motora /></h2>
+                            </cms:if>
+                            <cms:if prva_specifikacija = 'Kilometri' >
+                                <div class="main-info__characteristic-img">
+                                    <img src="/images/motor/kilometri.png">
+                                </div>
+                                <span>KILOMETRI</span>
+                                <h2><cms:show kilometri /> km</h2>
+                            </cms:if>
+                            <cms:if prva_specifikacija = 'Prva registracija' >
+                                <div class="main-info__characteristic-img">
+                                    <img src="/images/motor/prva-registracija.png">
+                                </div>
+                                <span>PRVA REGISTRACIJA</span>
+                                <h2><cms:show registracija /></h2>
+                            </cms:if>
                         </div>
                         <div class="main-info__characteristic">
-                            <div class="main-info__characteristic-img">
-                                <img src="/images/motor/kilometri.png">
-                            </div>
-                            <span>KILOMETRI</span>
-                            <h2>63 000 km</h2>
+                            <cms:if druga_specifikacija = 'Snaga' >
+                                <div class="main-info__characteristic-img">
+                                    <img src="/images/motor/snaga.png">
+                                </div>
+                                <span>SNAGA</span>
+                                <h2><cms:show snaga_motora /> kW</h2>
+                            </cms:if>
+                            <cms:if druga_specifikacija = 'Boja' >
+                                <div class="main-info__characteristic-img">
+                                    <img src="/images/motor/boja.png">
+                                </div>
+                                <span>BOJA</span>
+                                <h2><cms:show boja_motora /></h2>
+                            </cms:if>
+                            <cms:if druga_specifikacija = 'Obujam motora' >
+                                <div class="main-info__characteristic-img">
+                                    <img src="/images/motor/obujam-motora.png">
+                                </div>
+                                <span>OBUJAM MOTORA</span>
+                                <h2><cms:show obujam_motora /> cm3</h2>
+                            </cms:if>
+                            <cms:if druga_specifikacija = 'Vlasnik' >
+                                <div class="main-info__characteristic-img">
+                                    <img src="/images/motor/vlasnik.png">
+                                </div>
+                                <span>VLASNIK</span>
+                                <h2><cms:show vlasnik /></h2>
+                            </cms:if>
+                            <cms:if druga_specifikacija = 'Vrsta motora' >
+                                <div class="main-info__characteristic-img">
+                                    <img src="/images/motor/vrsta-motora.png">
+                                </div>
+                                <span>VRSTA MOTORA</span>
+                                <h2><cms:show vrsta_motora /></h2>
+                            </cms:if>
+                            <cms:if druga_specifikacija = 'Kilometri' >
+                                <div class="main-info__characteristic-img">
+                                    <img src="/images/motor/kilometri.png">
+                                </div>
+                                <span>KILOMETRI</span>
+                                <h2><cms:show kilometri /> km</h2>
+                            </cms:if>
+                            <cms:if druga_specifikacija = 'Prva registracija' >
+                                <div class="main-info__characteristic-img">
+                                    <img src="/images/motor/prva-registracija.png">
+                                </div>
+                                <span>PRVA REGISTRACIJA</span>
+                                <h2><cms:show registracija /></h2>
+                            </cms:if>
                         </div>
                         <div class="main-info__characteristic">
-                            <div class="main-info__characteristic-img">
-                                <img src="/images/motor/snaga.png">
-                            </div>
-                            <span>PRVA REGISTRACIJA</span>
-                            <h2>2017.</h2>
+                            <cms:if treca_specifikacija = 'Snaga' >
+                                <div class="main-info__characteristic-img">
+                                    <img src="/images/motor/snaga.png">
+                                </div>
+                                <span>SNAGA</span>
+                                <h2><cms:show snaga_motora /> kW</h2>
+                            </cms:if>
+                            <cms:if treca_specifikacija = 'Boja' >
+                                <div class="main-info__characteristic-img">
+                                    <img src="/images/motor/boja.png">
+                                </div>
+                                <span>BOJA</span>
+                                <h2><cms:show boja_motora /></h2>
+                            </cms:if>
+                            <cms:if treca_specifikacija = 'Obujam motora' >
+                                <div class="main-info__characteristic-img">
+                                    <img src="/images/motor/obujam-motora.png">
+                                </div>
+                                <span>OBUJAM MOTORA</span>
+                                <h2><cms:show obujam_motora /> cm3</h2>
+                            </cms:if>
+                            <cms:if treca_specifikacija = 'Vlasnik' >
+                                <div class="main-info__characteristic-img">
+                                    <img src="/images/motor/vlasnik.png">
+                                </div>
+                                <span>VLASNIK</span>
+                                <h2><cms:show vlasnik /></h2>
+                            </cms:if>
+                            <cms:if treca_specifikacija = 'Vrsta motora' >
+                                <div class="main-info__characteristic-img">
+                                    <img src="/images/motor/vrsta-motora.png">
+                                </div>
+                                <span>VRSTA MOTORA</span>
+                                <h2><cms:show vrsta_motora /></h2>
+                            </cms:if>
+                            <cms:if treca_specifikacija = 'Kilometri' >
+                                <div class="main-info__characteristic-img">
+                                    <img src="/images/motor/kilometri.png">
+                                </div>
+                                <span>KILOMETRI</span>
+                                <h2><cms:show kilometri /> km</h2>
+                            </cms:if>
+                            <cms:if treca_specifikacija = 'Prva registracija' >
+                                <div class="main-info__characteristic-img">
+                                    <img src="/images/motor/prva-registracija.png">
+                                </div>
+                                <span>PRVA REGISTRACIJA</span>
+                                <h2><cms:show registracija /></h2>
+                            </cms:if>
                         </div>
                     </div>
                 </div>
@@ -118,7 +318,7 @@
                         </div>
                         <div class="vehicle__specification-text">
                             <span class="specification-text__category">STANJE</span>
-                            <span class="specification-text__info">Novo</span>
+                            <span class="specification-text__info"><cms:show k_page_foldertitle /></span>
                         </div>
                     </div>
                     <div class="vehicle__specification">
@@ -127,7 +327,7 @@
                         </div>
                         <div class="vehicle__specification-text">
                             <span class="specification-text__category">SNAGA</span>
-                            <span class="specification-text__info">85 kW</span>
+                            <span class="specification-text__info"><cms:show snaga_motora /> kW</span>
                         </div>
                     </div>
                     <div class="vehicle__specification">
@@ -136,7 +336,7 @@
                         </div>
                         <div class="vehicle__specification-text">
                             <span class="specification-text__category">BOJA</span>
-                            <span class="specification-text__info">Crna</span>
+                            <span class="specification-text__info"><cms:show boja_motora /></span>
                         </div>
                     </div>
                     <div class="vehicle__specification">
@@ -145,7 +345,7 @@
                         </div>
                         <div class="vehicle__specification-text">
                             <span class="specification-text__category">MODEL</span>
-                            <div class="specification-text__info">CBS 1300 ABS</div>
+                            <div class="specification-text__info"><cms:show model_motora /></div>
                         </div>
                     </div>
                     <div class="vehicle__specification">
@@ -154,7 +354,7 @@
                         </div>
                         <div class="vehicle__specification-text">
                             <span class="specification-text__category">OBUJAM MOTORA</span>
-                            <span class="specification-text__info">1284 cm3</span>
+                            <span class="specification-text__info"><cms:show obujam_motora /> cm3</span>
                         </div>
                     </div>
                     <div class="vehicle__specification">
@@ -163,7 +363,7 @@
                         </div>
                         <div class="vehicle__specification-text">
                             <span class="specification-text__category">VLASNIK</span>
-                            <span class="specification-text__info">1. vlasnik</span>
+                            <span class="specification-text__info"><cms:show vlasnik /></span>
                         </div>
                     </div>
                     <div class="vehicle__specification">
@@ -172,7 +372,7 @@
                         </div>
                         <div class="vehicle__specification-text">
                             <span class="specification-text__category">VRSTA MOTORA</span>
-                            <span class="specification-text__info">Četverotaktni</span>
+                            <span class="specification-text__info"><cms:show vrsta_motora /></span>
                         </div>
                     </div>
                     <div class="vehicle__specification">
@@ -181,7 +381,7 @@
                         </div>
                         <div class="vehicle__specification-text">
                             <span class="specification-text__category">KILOMETRI</span>
-                            <span class="specification-text__info">63 000 km</span>
+                            <span class="specification-text__info"><cms:show kilometri /> km</span>
                         </div>
                     </div>
                     <div class="vehicle__specification">
@@ -190,7 +390,7 @@
                         </div>
                         <div class="vehicle__specification-text">
                             <span class="specification-text__category">PRVA REGISTRACIJA</span>
-                            <span class="specification-text__info">2017.</span>
+                            <span class="specification-text__info"><cms:show registracija /></span>
                         </div>
                     </div>
                 </div>
@@ -198,18 +398,12 @@
             <div class="vehicle__equipment-section">
                 <h3>Dodatna oprema vozila</h3>
                 <p>Lorem Khaled Ipsum is a major key to success. The key to success is to keep your head above the water, never give up. You smart, you loyal, you a genius. It’s on you how you want to live your life.</p>
-                <div class="vehicle__equipment-card">
-                    <span>ABS sustav</span>
-                    <img src="/images/like-icon.png" alt="">
-                </div>
-                <div class="vehicle__equipment-card">
-                    <span>ABS sustav</span>
-                    <img src="/images/like-icon.png" alt="">
-                </div>
-                <div class="vehicle__equipment-card">
-                    <span>ABS sustav</span>
-                    <img src="/images/like-icon.png" alt="">
-                </div>
+                <cms:show_repeatable 'kurac' >
+                    <div class="vehicle__equipment-card">
+                        <span><cms:show kurcina /></span>
+                        <img src="/images/like-icon.png" alt="">
+                    </div>
+                </cms:show_repeatable>
             </div>
             <div class="vehicle__equipment-section">
                 <h3>Opis</h3>

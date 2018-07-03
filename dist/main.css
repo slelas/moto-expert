@@ -172,7 +172,8 @@ html {
       letter-spacing: 4.3px;
       color: #5eb66f;
       font-size: 17px;
-      font-weight: 900; }
+      font-weight: 900;
+      text-transform: uppercase; }
     .vehicle__main-info .main-info__text .vehicle-publish {
       font-size: 18px;
       font-weight: 600;
