@@ -7,7 +7,7 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="/dist/main.min.css">
         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,900" rel="stylesheet">
-        <title>Ponuda motora | Moto Expert</title>
+        <title>Novi motori | Moto Expert</title>
     </head>
     <body>
         <nav class="navigation">
@@ -29,29 +29,31 @@
                 <h1 class="header__title">Lorem ipsum dolor sit amet</h1>
                 <h2 class="header__subtitle">Lorem Khaled Ipsum is a major key to success. Look at the sunset, life is amazing, life is beautiful, life is what you make it. It’s important to use cocoa butter.</h2>
                 <div class="header__filters">
-                    <div class="header__filter">
-                        <img src="/images/circle.svg">
-                        <span>SVI MOTOCIKLI</span>
-                    </div>
-                    <div class="header__filter">
-                        <img src="/images/circle.svg">
-                        <span>RABLJENI MOTOCIKLI</span>
-                    </div>
-                    <div class="header__filter">
-                        <img src="/images/circle.svg">
-                        <span>NOVI MOTOCIKLI</span>
-                        <a href="<cms:link 'novo.php' />">NOVI MOTOCIKLI</a>
-                    </div>
-                    <div class="header__filter">
-                        <img src="/images/circle.svg">
-                        <span>U DOLASKU</span>
-                    </div>
+                    <cms:folders masterpage='motor.php' >
+                        <div class="header__filter">
+                            <img src="/images/circle.svg">
+                            <span>SVI MOTOCIKLI</span>
+                        </div>
+                        <div class="header__filter">
+                            <img src="/images/circle.svg">
+                            <span>RABLJENI MOTOCIKLI</span>
+                        </div>
+                        <div class="header__filter">
+                            <img src="/images/circle.svg">
+                            <span>NOVI MOTOCIKLI</span>
+                            <a href="<cms:show k_folder_link />"><cms:show k_folder_title /></a>
+                        </div>
+                        <div class="header__filter">
+                            <img src="/images/circle.svg">
+                            <span>U DOLASKU</span>
+                        </div>
+                    </cms:folders>
                 </div>
             </div>
         </header>
         <div class="motor-list">
             <h2 class="motor-list__title">Lista motora</h2>
-            <cms:pages masterpage='motor.php'>
+            <cms:pages masterpage='motor.php' folder='rabljeno'>
                 <a class="motor-list__card" href="<cms:show k_page_link />">
                     <div class="card__image" style='background-image: url("<cms:show motor_slika />");'></div>
                     <div class="card__container">

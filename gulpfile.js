@@ -23,12 +23,15 @@ gulp.task('compileSass', function () {
 gulp.task('watch', ['browserSync', 'compileSass'], function () {
     gulp.watch('styles/**/*.scss', ['compileSass']);
     gulp.watch('./*.html').on('change', browserSync.reload);
+    gulp.watch('./*.php').on('change', browserSync.reload);
 });
 
 gulp.task('browserSync', function() {
     browserSync.init({
-        server: {
+        proxy: "localhost",
+        port: 80
+        /* server: {
             baseDir: './'
-        }
+        } */
     })
 })

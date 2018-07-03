@@ -23,6 +23,22 @@ RewriteCond %{REQUEST_FILENAME} -d [OR]
 RewriteCond %{REQUEST_FILENAME} -f
 RewriteRule . - [L]
 
+#u-dolasku.php
+RewriteRule ^u-dolasku$ "$0/" [R=301,L,QSA]
+RewriteRule ^u-dolasku/$ u-dolasku.php [L,QSA]
+RewriteRule ^u-dolasku/.*?([^\.\/]*)\.html$ u-dolasku.php?pname=$1 [L,QSA]
+RewriteRule ^u-dolasku/([1-2]\d{3})/(?:(0[1-9]|1[0-2])/(?:(0[1-9]|1[0-9]|2[0-9]|3[0-1])/)?)?$ u-dolasku.php?d=$1$2$3 [L,QSA]
+RewriteRule ^u-dolasku/[^\.]*?([^/\.]*)/$ u-dolasku.php?fname=$1 [L,QSA]
+RewriteRule ^u-dolasku/[^\.]*?([^/\.]*)$ "$0/" [R=301,L,QSA]
+
+#rabljeno.php
+RewriteRule ^rabljeno$ "$0/" [R=301,L,QSA]
+RewriteRule ^rabljeno/$ rabljeno.php [L,QSA]
+RewriteRule ^rabljeno/.*?([^\.\/]*)\.html$ rabljeno.php?pname=$1 [L,QSA]
+RewriteRule ^rabljeno/([1-2]\d{3})/(?:(0[1-9]|1[0-2])/(?:(0[1-9]|1[0-9]|2[0-9]|3[0-1])/)?)?$ rabljeno.php?d=$1$2$3 [L,QSA]
+RewriteRule ^rabljeno/[^\.]*?([^/\.]*)/$ rabljeno.php?fname=$1 [L,QSA]
+RewriteRule ^rabljeno/[^\.]*?([^/\.]*)$ "$0/" [R=301,L,QSA]
+
 #ponuda-motora.php
 RewriteRule ^ponuda-motora$ "$0/" [R=301,L,QSA]
 RewriteRule ^ponuda-motora/$ ponuda-motora.php [L,QSA]
@@ -31,6 +47,22 @@ RewriteRule ^ponuda-motora/([1-2]\d{3})/(?:(0[1-9]|1[0-2])/(?:(0[1-9]|1[0-9]|2[0
 RewriteRule ^ponuda-motora/[^\.]*?([^/\.]*)/$ ponuda-motora.php?fname=$1 [L,QSA]
 RewriteRule ^ponuda-motora/[^\.]*?([^/\.]*)$ "$0/" [R=301,L,QSA]
 
+#ponuda-motora-original.php
+RewriteRule ^ponuda-motora-original$ "$0/" [R=301,L,QSA]
+RewriteRule ^ponuda-motora-original/$ ponuda-motora-original.php [L,QSA]
+RewriteRule ^ponuda-motora-original/.*?([^\.\/]*)\.html$ ponuda-motora-original.php?pname=$1 [L,QSA]
+RewriteRule ^ponuda-motora-original/([1-2]\d{3})/(?:(0[1-9]|1[0-2])/(?:(0[1-9]|1[0-9]|2[0-9]|3[0-1])/)?)?$ ponuda-motora-original.php?d=$1$2$3 [L,QSA]
+RewriteRule ^ponuda-motora-original/[^\.]*?([^/\.]*)/$ ponuda-motora-original.php?fname=$1 [L,QSA]
+RewriteRule ^ponuda-motora-original/[^\.]*?([^/\.]*)$ "$0/" [R=301,L,QSA]
+
+#novo.php
+RewriteRule ^novo$ "$0/" [R=301,L,QSA]
+RewriteRule ^novo/$ novo.php [L,QSA]
+RewriteRule ^novo/.*?([^\.\/]*)\.html$ novo.php?pname=$1 [L,QSA]
+RewriteRule ^novo/([1-2]\d{3})/(?:(0[1-9]|1[0-2])/(?:(0[1-9]|1[0-9]|2[0-9]|3[0-1])/)?)?$ novo.php?d=$1$2$3 [L,QSA]
+RewriteRule ^novo/[^\.]*?([^/\.]*)/$ novo.php?fname=$1 [L,QSA]
+RewriteRule ^novo/[^\.]*?([^/\.]*)$ "$0/" [R=301,L,QSA]
+
 #motor.php
 RewriteRule ^motor$ "$0/" [R=301,L,QSA]
 RewriteRule ^motor/$ motor.php [L,QSA]
@@ -38,4 +70,12 @@ RewriteRule ^motor/.*?([^\.\/]*)\.html$ motor.php?pname=$1 [L,QSA]
 RewriteRule ^motor/([1-2]\d{3})/(?:(0[1-9]|1[0-2])/(?:(0[1-9]|1[0-9]|2[0-9]|3[0-1])/)?)?$ motor.php?d=$1$2$3 [L,QSA]
 RewriteRule ^motor/[^\.]*?([^/\.]*)/$ motor.php?fname=$1 [L,QSA]
 RewriteRule ^motor/[^\.]*?([^/\.]*)$ "$0/" [R=301,L,QSA]
+
+#gallery.php
+RewriteRule ^gallery$ "$0/" [R=301,L,QSA]
+RewriteRule ^gallery/$ gallery.php [L,QSA]
+RewriteRule ^gallery/.*?([^\.\/]*)\.html$ gallery.php?pname=$1 [L,QSA]
+RewriteRule ^gallery/([1-2]\d{3})/(?:(0[1-9]|1[0-2])/(?:(0[1-9]|1[0-9]|2[0-9]|3[0-1])/)?)?$ gallery.php?d=$1$2$3 [L,QSA]
+RewriteRule ^gallery/[^\.]*?([^/\.]*)/$ gallery.php?fname=$1 [L,QSA]
+RewriteRule ^gallery/[^\.]*?([^/\.]*)$ "$0/" [R=301,L,QSA]
 </IfModule>
