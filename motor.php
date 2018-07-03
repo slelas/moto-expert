@@ -22,7 +22,7 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="/dist/main.min.css">
         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,900" rel="stylesheet">
-        <title>Moto Expert</title>
+        <title><cms:show k_page_title /> - Moto Expert</title>
     </head>
     <body>
         <nav class="navigation">
@@ -219,12 +219,8 @@
                 <h3>Fotografije</h3>
                 <div class="mobile-flex">
                     <cms:reverse_related_pages 'motor_image' masterpage='gallery.php' >
-                        <a href="<cms:show gg_image />"><img class="vehicle__photo" src="<cms:show gg_image />"></a>
+                        <a class="vehicle__photo" target="_blank" href="<cms:show gg_image />" style='background-image: url("<cms:show gg_image />");'></a>
                     </cms:reverse_related_pages>
-                    <img class="vehicle__photo" src="/images/moto-guzzi.jpg" alt="">
-                    <img class="vehicle__photo" src="/images/moto-guzzi.jpg" alt="">
-                    <img class="vehicle__photo" src="/images/moto-guzzi.jpg" alt="">
-                    <img class="vehicle__photo" src="/images/moto-guzzi.jpg" alt="">
                 </div>
             </div>
         </div>

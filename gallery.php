@@ -14,6 +14,8 @@
       label="Image"
       desc="Upload your main image here"
       show_preview='1'
+      preview_height='200'
+      width='1920'
       type="image"
    />
 </cms:template>
