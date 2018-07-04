@@ -63,6 +63,14 @@ RewriteRule ^novo/([1-2]\d{3})/(?:(0[1-9]|1[0-2])/(?:(0[1-9]|1[0-9]|2[0-9]|3[0-1
 RewriteRule ^novo/[^\.]*?([^/\.]*)/$ novo.php?fname=$1 [L,QSA]
 RewriteRule ^novo/[^\.]*?([^/\.]*)$ "$0/" [R=301,L,QSA]
 
+#nav.php
+RewriteRule ^nav$ "$0/" [R=301,L,QSA]
+RewriteRule ^nav/$ nav.php [L,QSA]
+RewriteRule ^nav/.*?([^\.\/]*)\.html$ nav.php?pname=$1 [L,QSA]
+RewriteRule ^nav/([1-2]\d{3})/(?:(0[1-9]|1[0-2])/(?:(0[1-9]|1[0-9]|2[0-9]|3[0-1])/)?)?$ nav.php?d=$1$2$3 [L,QSA]
+RewriteRule ^nav/[^\.]*?([^/\.]*)/$ nav.php?fname=$1 [L,QSA]
+RewriteRule ^nav/[^\.]*?([^/\.]*)$ "$0/" [R=301,L,QSA]
+
 #motor.php
 RewriteRule ^motor$ "$0/" [R=301,L,QSA]
 RewriteRule ^motor/$ motor.php [L,QSA]
@@ -78,4 +86,12 @@ RewriteRule ^gallery/.*?([^\.\/]*)\.html$ gallery.php?pname=$1 [L,QSA]
 RewriteRule ^gallery/([1-2]\d{3})/(?:(0[1-9]|1[0-2])/(?:(0[1-9]|1[0-9]|2[0-9]|3[0-1])/)?)?$ gallery.php?d=$1$2$3 [L,QSA]
 RewriteRule ^gallery/[^\.]*?([^/\.]*)/$ gallery.php?fname=$1 [L,QSA]
 RewriteRule ^gallery/[^\.]*?([^/\.]*)$ "$0/" [R=301,L,QSA]
+
+#footer.php
+RewriteRule ^footer$ "$0/" [R=301,L,QSA]
+RewriteRule ^footer/$ footer.php [L,QSA]
+RewriteRule ^footer/.*?([^\.\/]*)\.html$ footer.php?pname=$1 [L,QSA]
+RewriteRule ^footer/([1-2]\d{3})/(?:(0[1-9]|1[0-2])/(?:(0[1-9]|1[0-9]|2[0-9]|3[0-1])/)?)?$ footer.php?d=$1$2$3 [L,QSA]
+RewriteRule ^footer/[^\.]*?([^/\.]*)/$ footer.php?fname=$1 [L,QSA]
+RewriteRule ^footer/[^\.]*?([^/\.]*)$ "$0/" [R=301,L,QSA]
 </IfModule>

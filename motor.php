@@ -4,6 +4,7 @@
     <cms:folder name="novo" title="Novo" />
     <cms:folder name="rabljeno" title="Rabljeno" />
     <cms:folder name="u_dolasku" title="U dolasku" />
+    <cms:editable name='cijena_motora' label='Cijena motora' desc='u HRK' type='text' />
     <cms:repeatable name='kurac' label='kurac'>
         <cms:editable name='kurcina' type='text' />
     </cms:repeatable>
@@ -93,27 +94,7 @@
         <title><cms:show k_page_title /> - Moto Expert</title>
     </head>
     <body>
-        <nav class="navigation">
-            <div class="navigation__container clearfix">
-                <input type="checkbox" id="menu-toggle"/>
-                <label for="menu-toggle" class="hamburger-container">
-                    <img class="hamburger" src="/images/menu.png">
-                </label>
-                <label for="menu-toggle" class="cross-container">
-                    <img class="cross" src="/images/cross.png">
-                </label>
-                <img class="navigation__logo" src="/images/moto-expert-logo.svg" alt="Moto Expert logo">
-                <a class="navigation__button" href="#">
-                    <img class="button__icon" src="/images/send-message-icon.svg" alt="Send message icon">
-                    <span class="button__text">Kontaktirajte nas</span>
-                </a>
-                <ul class="navigation__items">
-                    <a href="#"><li class="navigation__item">Naslovnica</li></a>
-                    <a href="<cms:link 'ponuda-motora.php' />"><li class="navigation__item">Ponuda motora</li></a>
-                    <a href="#"><li class="navigation__item">Način plaćanja</li></a>
-                </ul>
-            </div>
-        </nav>
+        <cms:embed 'nav.php' />
         <header class="header" style='background-image: url("<cms:show motor_slika />");'></header>
         <div class="vehicle">
             <div class="vehicle__header-container clearfix">
@@ -283,8 +264,8 @@
                     <div class="vehicle__price-container">
                         <div>
                             <span>CIJENA</span>
-                            <h3>39.450 HRK</h3>
-                            <span>4.300 €</span>
+                            <h3><cms:number_format cijena_motora thousands_separator='.' decimal_precision='0' /> HRK</h3>
+                            <span>~<cms:number_format "<cms:mul cijena_motora '0.135' />" thousands_separator='.' decimal_precision='0' /> €</span>
                         </div>
                         <div class="eur">€</div>
                         <div class="eur">€</div>
@@ -418,35 +399,7 @@
                 </div>
             </div>
         </div>
-        <footer class="footer">
-            <div class="footer__container clearfix">
-                <div class="footer__company-info">
-                    <img src="/images/moto-expert-logo.svg">
-                    <div class="company-info__container">
-                        <span>Moto Expert d.o.o.</span>
-                        <p>OIB: 50235560247; MB: 04654293</p>
-                        <p>Žiro račun: 2360000 – 1102192162 kod Zagrebačke banke d.d.</p>
-                    </div>
-                </div>
-                <div class="footer__contact">
-                    <span>Kontaktirajte nas</span>
-                    <span>+385 98 299 055</span>
-                    <span>info@motoexpert.hr</span>
-                    <img src="/images/facebook.svg" alt="">
-                    <img src="/images/instagram.svg" alt="">
-                </div>
-                <ul class="footer__navigation">
-                    <li>Naslovnica</li>
-                    <li>Motori</li>
-                    <li>Način plaćanja</li>
-                    <li>Kontakt</li>
-                </ul>
-            </div>
-            <div class="footer__signature">
-                <span class="footer__fire">Made with 🔥</span>
-                <span class="footer__fuel">FUEL AGENCY</span>
-            </div>
-        </footer>
+        <cms:embed 'footer.php' />
     </body>
 </html>
 <?php COUCH::invoke(); ?>

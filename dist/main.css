@@ -613,7 +613,7 @@ html {
     margin-top: 20px;
     padding-bottom: 20px; }
   .footer__signature {
-    margin-bottom: 120px; }
+    padding-bottom: 120px; }
   .vehicle__main-info {
     padding: 15px;
     width: calc(100% - 30px); }
@@ -782,7 +782,8 @@ html {
   background-color: #ffffff;
   box-shadow: 0 0 23px 0 rgba(15, 43, 55, 0.1);
   overflow: hidden;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  display: block; }
   .motor-list__card .card__image {
     height: 200px;
     background-repeat: no-repeat;
