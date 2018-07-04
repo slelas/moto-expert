@@ -19,87 +19,111 @@
                 </a>
                 <ul class="navigation__items">
                     <a href="#"><li class="navigation__item">Naslovnica</li></a>
-                    <a href="<cms:link 'ponuda-motora.php' />"><li class="navigation__item">Ponuda motora</li></a>
+                    <a href="../ponuda-motora.php"><li class="navigation__item">Ponuda motora</li></a>
                     <a href="#"><li class="navigation__item">Način plaćanja</li></a>
                 </ul>
             </div>
         </nav>
         <header class="motor-list__header">
-            <div class="motor-list__header-container">
-                <h1 class="header__title">Lorem ipsum dolor sit amet</h1>
-                <h2 class="header__subtitle">Lorem Khaled Ipsum is a major key to success. Look at the sunset, life is amazing, life is beautiful, life is what you make it. It’s important to use cocoa butter.</h2>
-                <div class="header__filters">
-                    <div class="header__filter">
-                        <img src="/images/circle.svg">
-                        <span>SVI MOTOCIKLI</span>
+            <h1 class="motor-list__header-title">Super veliki naslov o predobrim motorima</h1>
+            <h3 class="motor-list__header-desc">Lorem Khaled Ipsum is a major key to success. Look at the sunset, life is amazing, life is beautiful, life is what you make it.</h3>
+        </header>
+        <div class="motor-list__filters-collapsible">
+            <input id="collapsible" class="toggle" type="checkbox">
+            <label for="collapsible" class="lbl-toggle">VRSTA VOZILA <div class="arrow-circle"><img src="/images/arrow.png"></div></label>
+            <div class="motor-list__filters">
+                <a href="#" class="motor-list__filter">
+                    <div class="motor-list__filter-imgs">
+                        <img class="motor-list__filter-img" src="/images/circle.svg">
+                        <img class="motor-list__filter-img" src="/images/circle.svg">
+                        <img class="motor-list__filter-img" src="/images/circle.svg">
                     </div>
-                    <div class="header__filter">
-                        <img src="/images/circle.svg">
-                        <span>RABLJENI MOTOCIKLI</span>
+                    <span class="motor-list__filter-title">SVI MOTOCIKLI</span>
+                    <div class="motor-list__filter-indicator"></div>
+                </a>
+                <a href="#" class="motor-list__filter">
+                    <div class="motor-list__filter-imgs">
+                        <img class="motor-list__filter-img" src="/images/circle.svg">
+                        <img class="motor-list__filter-img" src="/images/circle.svg">
                     </div>
-                    <div class="header__filter">
-                        <img src="/images/circle.svg">
-                        <span>NOVI MOTOCIKLI</span>
-                        <a href="<cms:link 'novo.php' />">NOVI MOTOCIKLI</a>
+                    <span class="motor-list__filter-title">RABLJENI MOTOCIKLI</span>
+                </a>
+                <a href="#" class="motor-list__filter">
+                    <div class="motor-list__filter-imgs">
+                        <img class="motor-list__filter-img" src="/images/circle.svg">
                     </div>
-                    <div class="header__filter">
-                        <img src="/images/circle.svg">
-                        <span>U DOLASKU</span>
+                    <span class="motor-list__filter-title">NOVI MOTOCIKLI</span>
+                </a>
+                <a href="#" class="motor-list__filter">
+                    <div class="motor-list__filter-imgs">
+                        <img class="motor-list__filter-img" src="/images/circle.svg">
+                    </div>
+                    <span class="motor-list__filter-title">U DOLASKU</span>
+                </a>
+            </div>
+        </div>
+        <section class="motor-list">
+            <h2 class="motor-list__main-title">Lista vozila</h3>
+            <div class="motor-list__card clearfix">
+                <div class="card__image" style='background-image: url("/images/moto-guzzi.jpg");'></div>
+                <div class="card__main-info-container">
+                    <div class="card__main-info clearfix">
+                        <div class="card__main-info-left">
+                            <div class="card__category">NOVO VOZILO</div>
+                            <div class="card__title">Honda CBS 1300</div>
+                            <div class="card__date"><b>Objavljeno:</b> 04.07.2018.</div>
+                        </div>
+                        <div class="card__main-info-right">
+                            <div class="card__price-hrk">39.450 HRK</div>
+                            <div class="card__price-eur">4.300 €</div>
+                        </div>
+                    </div>
+                    <div class="card__specifications">
+                        <div class="card__specification">
+                            <div class="card__specification-icon">
+                                <img src="/images/motor/stanje.png" alt="Stanje motora ikonica">
+                            </div>
+                            <div class="card__specification-text">
+                                <span class="specification-text__category">SNAGA</span>
+                                <span class="specification-text__info">85 kW</span>
+                            </div>
+                        </div>
+                        <div class="card__specification">
+                            <div class="card__specification-icon">
+                                <img src="/images/motor/stanje.png" alt="Stanje motora ikonica">
+                            </div>
+                            <div class="card__specification-text">
+                                <span class="specification-text__category">KILOMETRI</span>
+                                <span class="specification-text__info">128 000 km</span>
+                            </div>
+                        </div>
+                        <div class="card__specification">
+                            <div class="card__specification-icon">
+                                <img src="/images/motor/stanje.png" alt="Stanje motora ikonica">
+                            </div>
+                            <div class="card__specification-text">
+                                <span class="specification-text__category">SNAGA</span>
+                                <span class="specification-text__info">3000 cm3</span>
+                            </div>
+                        </div>
+                        <div class="card__specification">
+                            <div class="card__specification-icon">
+                                <img src="/images/motor/stanje.png" alt="Stanje motora ikonica">
+                            </div>
+                            <div class="card__specification-text">
+                                <span class="specification-text__category">SNAGA</span>
+                                <span class="specification-text__info">3000 cm3</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card__main-info-right card__main-info-right--desktop">
+                        <div class="card__price-tag">CIJENA</div>
+                        <div class="card__price-hrk">39.450 HRK</div>
+                        <div class="card__price-eur">4.300 €</div>
                     </div>
                 </div>
             </div>
-        </header>
-        <div class="motor-list">
-            <h2 class="motor-list__title">Lista motora</h2>
-            <cms:pages masterpage='motor.php'>
-                <a class="motor-list__card" href="<cms:show k_page_link />">
-                    <div class="card__image" style='background-image: url("<cms:show motor_slika />");'></div>
-                    <div class="card__container">
-                        <div class="card__main-info">
-                            <span class="card__main-info__category <cms:if k_page_foldertitle=='U DOLASKU'>orange</cms:if>
-                            <cms:if k_page_foldertitle=='NOVO'>green</cms:if>"><cms:show k_page_foldertitle /></span>
-                            <h3><cms:show k_page_title /></h3>
-                            <span class="publish-date"><b>Objavljeno:</b> <cms:date k_page_date format='d.m.Y.' /></span>
-                        </div>
-                        <div class="card__specifications">
-                            <div class="card__specification">
-                                <img src="/images/circle.svg">
-                                <div class="vehicle__specification-text">
-                                    <span class="specification-text__category">VLASNIK</span>
-                                    <span class="specification-text__info"><cms:show vlasnik /></span>
-                                </div>
-                            </div>
-                            <div class="card__specification">
-                                <img src="/images/circle.svg">
-                                <div class="vehicle__specification-text">
-                                    <span class="specification-text__category">VLASNIK</span>
-                                    <span class="specification-text__info">1. vlasnik</span>
-                                </div>
-                            </div>
-                            <div class="card__specification">
-                                <img src="/images/circle.svg">
-                                <div class="vehicle__specification-text">
-                                    <span class="specification-text__category">VLASNIK</span>
-                                    <span class="specification-text__info">1. vlasnik</span>
-                                </div>
-                            </div>
-                            <div class="card__specification">
-                                <img src="/images/circle.svg">
-                                <div class="vehicle__specification-text">
-                                    <span class="specification-text__category">VLASNIK</span>
-                                    <span class="specification-text__info">1. vlasnik</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card__price-info">
-                            <span class="card__price">CIJENA</span>
-                            <span class="card__price-hrk">39.450 HRK</span>
-                            <span class="card__price-eur">4.300 €</span>
-                        </div>
-                    </div>
-                </a>
-            </cms:pages>
-        </div>
+        </section>
         <footer class="footer">
             <div class="footer__container clearfix">
                 <div class="footer__company-info">
