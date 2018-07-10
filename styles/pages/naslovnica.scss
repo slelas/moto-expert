@@ -110,7 +110,11 @@ h3 {
 .why {
     margin-top: 50px;
     margin-bottom: 50px;
-    background-image: linear-gradient(to bottom, rgba(244, 250, 253, 1), rgba(159, 222, 254, 0));
+    // background-image: linear-gradient(to bottom, rgba(244, 250, 253, 1), rgba(159, 222, 254, 0));
+    background-image: url('/images/plavi-val.svg');
+    background-size: cover;
+    background-position: center -60px;
+    background-repeat: no-repeat;
 }
 
 .why__container {
@@ -124,7 +128,7 @@ h3 {
     font-size: 36px;
     font-weight: 600;
     color: #1f1f1f;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .why__card {
@@ -163,7 +167,7 @@ h3 {
     background-size: cover;
     background-position: center 150px;
     background-repeat: no-repeat;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 .customers__container {
@@ -299,7 +303,7 @@ h3 {
 }
 
 .customer__redirect-bottom {
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 700;
     color: #c41e22;
 
@@ -307,4 +311,10 @@ h3 {
         margin-left: 5px;
         width: 17px;
     }
+}
+
+.more-info__wrapper {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
 }

@@ -159,6 +159,14 @@
                 </div>
             </a>
         </section>
+        <section class="more-info__wrapper">
+            <div class="njuskalo">
+                <h3 class="njuskalo__title">Lorem Khaled Ipsum</h3>
+                <p class="njuskalo__desc">Lorem Khaled Ipsum is a major key to success. Look at the sunset, life is amazing, life is beautiful, life is what you make it.</p>
+                <a class="njuskalo__link" href="">njuskalo.hr <img src="/images/arrow-white.png"></a>
+                <img class="njuskalo__img" src="/images/njuskalo/njuskalo.png">
+            </div>
+        </section>
         <cms:embed 'footer.php' />
     </body>
 </html>
