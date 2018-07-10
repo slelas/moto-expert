@@ -12,8 +12,8 @@
     <body>
         <cms:embed 'nav.php' />
         <section class="samozanav"></section>
-        <section class="redirect">
-            <div class="redirect__main-info-container">
+        <section class="redirect clearfix">
+            <div class="redirect__main-info-container clearfix">
                 <img class="redirect__main-info-image" src="/images/motor/svi-motori.png">
                 <div class="redirect__main-info">
                     <h2>Motore koje držimo khaled ipsum is a major key to success in Croatia!</h2>

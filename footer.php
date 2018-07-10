@@ -25,7 +25,7 @@
     </div>
     <div class="footer__signature">
         <span class="footer__fire">Made with 🔥</span>
-        <span class="footer__fuel">FUEL AGENCY</span>
+        <span class="footer__fuel">FUEL CO.</span>
     </div>
 </footer>
 <?php COUCH::invoke(); ?>
