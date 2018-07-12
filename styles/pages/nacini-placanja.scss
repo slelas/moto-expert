@@ -1,0 +1,39 @@
+.nacini-placanja {
+    padding: 15px 20px;
+    border-radius: 8px;
+    background-image: linear-gradient(to bottom, rgba(253, 133, 1, 0.91), rgba(253, 112, 1, 0.94));
+    box-shadow: 0 6px 9px 0 rgba(253, 123, 18, 0.37);
+    color: white;
+    position: relative;
+}
+
+.nacini-placanja__title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.nacini-placanja__desc {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.nacini-placanja__link {
+    color: white;
+    font-weight: 15px;
+    font-weight: 600;
+    margin-right: 10px;
+
+    img {
+        width: 15px;
+        margin-left: 5px;
+    }
+}
+
+.nacini-placanja__img {
+    position: absolute;
+    height: 64px;
+    right: -10px;
+    bottom: 0;
+}

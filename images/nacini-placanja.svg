@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="182" height="179" viewBox="0 0 182 179">
+    <defs>
+        <filter id="a" width="115.6%" height="113.6%" x="-6.1%" y="-9.8%" filterUnits="objectBoundingBox">
+            <feOffset dx="3" dy="-6" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="3.5"/>
+            <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.0922497736 0"/>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+    </defs>
+    <g fill="none" fill-rule="evenodd" filter="url(#a)" transform="translate(1 12)">
+        <g transform="rotate(14 20.628 169.454)">
+            <g fill="#D7D7E5">
+                <path d="M4.798 2.79h128.17a2 2 0 0 1 2 2.02l-1.407 131.068a2 2 0 0 1-1.516 1.919L6.466 169.107a2 2 0 0 1-2.483-1.926L2.798 4.804a2 2 0 0 1 2-2.015z"/>
+                <path d="M131.411.845l2.748 2.743V5.59h-3.318V.845z"/>
+            </g>
+            <path fill="#FFF" d="M2.087 0h128.102a2 2 0 0 1 2 2.018L131 136.402a2 2 0 0 1-1.517 1.923L9.567 168.223a2 2 0 0 1-2.482-1.855L.089 2.085A2 2 0 0 1 2.087 0z"/>
+            <rect width="41.75" height="40.441" x="9.742" y="9.762" fill="#F2F2F9" rx="2"/>
+            <rect width="65.408" height="5.578" x="57.058" y="9.762" fill="#F2F2F9" rx="2"/>
+            <rect width="65.408" height="5.578" x="57.058" y="21.383" fill="#F2F2F9" rx="2"/>
+            <rect width="65.408" height="5.578" x="57.058" y="33.004" fill="#F2F2F9" rx="2"/>
+            <rect width="65.408" height="5.578" x="57.058" y="44.625" fill="#F2F2F9" rx="2"/>
+            <rect width="65.408" height="5.578" x="11.133" y="72.515" fill="#F2F2F9" rx="2"/>
+            <rect width="111.332" height="5.578" x="11.133" y="86.461" fill="#F2F2F9" rx="2"/>
+            <rect width="111.332" height="5.578" x="11.133" y="100.406" fill="#F2F2F9" rx="2"/>
+            <rect width="111.332" height="5.578" x="11.133" y="114.351" fill="#F2F2F9" rx="2"/>
+            <rect width="111.332" height="5.578" x="11.133" y="128.296" fill="#F2F2F9" rx="2"/>
+        </g>
+        <g transform="rotate(2 -194.524 255.762)">
+            <g fill="#D7D7E5">
+                <path d="M4.797 3.79h128.185a2 2 0 0 1 2 2.007l-.611 146.418a2 2 0 0 1-1.93 1.99L5.86 158.625a2 2 0 0 1-2.07-1.985L2.797 5.802a2 2 0 0 1 2-2.013z"/>
+                <path d="M131.411 1.845l2.748 2.743V6.59h-3.318V1.845z"/>
+            </g>
+            <path fill="#FFF" d="M2.005 1L130.207.999a2 2 0 0 1 2 2V3l-.091 149.146a2 2 0 0 1-1.93 1.997L2.423 158.605a2 2 0 0 1-2.07-1.995L.004 3.005a2 2 0 0 1 2-2.005z"/>
+            <rect width="41.75" height="40.441" x="9.742" y="10.762" fill="#F2F2F9" rx="2"/>
+            <rect width="65.408" height="5.578" x="57.058" y="10.762" fill="#F2F2F9" rx="2"/>
+            <rect width="65.408" height="5.578" x="57.058" y="22.383" fill="#F2F2F9" rx="2"/>
+            <rect width="65.408" height="5.578" x="57.058" y="34.004" fill="#F2F2F9" rx="2"/>
+            <rect width="65.408" height="5.578" x="57.058" y="45.625" fill="#F2F2F9" rx="2"/>
+            <rect width="65.408" height="5.578" x="11.133" y="73.515" fill="#F2F2F9" rx="2"/>
+            <rect width="111.332" height="5.578" x="11.133" y="87.461" fill="#F2F2F9" rx="2"/>
+            <rect width="111.332" height="5.578" x="11.133" y="101.406" fill="#F2F2F9" rx="2"/>
+            <rect width="111.332" height="5.578" x="11.133" y="115.351" fill="#F2F2F9" rx="2"/>
+            <rect width="111.332" height="5.578" x="11.133" y="129.296" fill="#F2F2F9" rx="2"/>
+            <rect width="111.332" height="5.578" x="11.133" y="143.242" fill="#F2F2F9" rx="2"/>
+        </g>
+    </g>
+</svg>

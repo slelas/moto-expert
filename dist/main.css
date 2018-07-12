@@ -1130,6 +1130,9 @@ h2,
 h3 {
   margin: 0; }
 
+.redirect--desktop {
+  display: none; }
+
 .redirect__main-info-container {
   border-radius: 9px;
   background-color: #fff;
@@ -1353,6 +1356,9 @@ h3 {
   border-radius: 6px;
   background-color: rgba(196, 30, 34, 0.15); }
 
+.customer__redirect--desktop, .customers__container--desktop {
+  display: none; }
+
 .customer__redirect-icon {
   width: 40px;
   float: left;
@@ -1381,6 +1387,12 @@ h3 {
   margin-left: auto;
   margin-right: auto; }
 
+.customers .njuskalo, .customers .nacini-placanja {
+  width: calc(90% - 40px);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px; }
+
 @media screen and (min-width: 425px) {
   .redirect__side-info-container {
     width: 310px; }
@@ -1388,6 +1400,20 @@ h3 {
     margin-top: 25px; }
   .customer__redirect-bottom {
     font-size: 16px; } }
+
+@media screen and (min-width: 600px) {
+  .redirect__side-info-container {
+    width: 90%; }
+  .redirect__side-info {
+    box-sizing: border-box;
+    width: 48%;
+    display: inline-flex; }
+    .redirect__side-info:nth-child(1) {
+      float: left; }
+    .redirect__side-info:nth-child(2) {
+      display: none; }
+    .redirect__side-info:nth-child(3) {
+      float: right; } }
 
 @media screen and (min-width: 768px) {
   .redirect {
@@ -1402,21 +1428,147 @@ h3 {
   .redirect__side-info-container {
     display: flex;
     flex-wrap: wrap;
-    align-content: space-between; }
+    width: 310px; }
   .redirect__side-info {
-    margin-top: 0;
-    width: 100%; }
+    margin-top: 12px;
+    width: 100%;
+    display: flex; }
+    .redirect__side-info:first-child {
+      margin-top: 0; }
+    .redirect__side-info:nth-child(2) {
+      display: flex; }
+  .processes {
+    display: flex;
+    flex-wrap: wrap; }
+  .process {
+    width: 50%; }
+  .process-section {
+    margin-top: 200px; }
+  .why__card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+  .why__card {
+    width: calc(50% - 40px); }
+  .redirect--mobile {
+    display: none; }
+  .redirect--desktop {
+    display: flex; }
+  .samozanav {
+    position: relative;
+    height: 600px; }
+  .redirect {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%); }
+  .customer__redirect {
+    width: 300px; }
+  .customers {
+    padding-bottom: 40px;
+    margin-bottom: 0; }
+    .customers .njuskalo, .customers .nacini-placanja {
+      width: 300px;
+      display: inline-block; }
+    .customers .njuskalo {
+      margin-right: 15px; }
+  .customers__bottom-wrapper {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex; } }
+
+@media screen and (min-width: 1024px) {
+  .why {
+    background-position: unset;
+    padding-top: 50px;
+    padding-bottom: 50px; }
+  .why__card {
+    width: calc(100%/3 - 40px); }
+  .why__title {
+    width: 600px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px; } }
+
+@media screen and (min-width: 1200px) {
+  .customers .njuskalo, .customers .nacini-placanja {
+    width: 400px; } }
+
+@media screen and (min-width: 1440px) {
+  .redirect {
+    width: 1080px; }
+  .redirect__main-info-container {
+    padding: 30px 25px;
+    width: calc(100% - 310px - 50px - 25px); }
   .redirect__main-info-image {
     float: left; }
   .redirect__main-info {
     float: left;
-    width: calc(100% - 56px - 15px);
-    margin-left: 15px; }
+    width: calc(100% - 56px - 25px);
+    margin-left: 25px; }
     .redirect__main-info h2 {
       margin-top: 0;
-      font-size: 22px; }
+      font-size: 34px; }
     .redirect__main-info p {
-      font-size: 16px; } }
+      font-size: 22px; }
+  .process-section {
+    width: 85%;
+    margin-top: 250px; }
+  .process-section__text-wrapper, .processes {
+    display: inline-block; }
+  .process-section__text-wrapper {
+    width: 500px;
+    float: left; }
+  .processes {
+    width: 620px;
+    float: right; }
+  .process {
+    display: inline-flex;
+    width: 49%; }
+    .process:nth-child(1), .process:nth-child(2) {
+      margin-top: 0; }
+    .process span {
+      width: 90%; }
+  .why__card-container {
+    justify-content: center; }
+  .why__card {
+    height: 150px;
+    width: 330px;
+    margin-right: 45px; }
+    .why__card:last-child {
+      margin-right: 0; }
+  .why__card-wrapper {
+    margin-top: 20px; }
+    .why__card-wrapper h3 {
+      font-size: 37px; }
+    .why__card-wrapper p {
+      font-size: 18px; }
+  .customers__container--desktop, .customer__redirect--desktop {
+    display: block; }
+  .customers__container--mobile, .customer__redirect--mobile {
+    display: none; }
+  .customers__slider {
+    float: left;
+    position: relative; }
+  .customers__container {
+    width: 480px; }
+  .customers__slider {
+    width: calc(50% - 60px);
+    padding-top: 0; }
+  .customer__card {
+    -webkit-animation: linear infinite alternate;
+    -webkit-animation-name: run;
+    -webkit-animation-duration: 20s; }
+  @-webkit-keyframes run {
+    0% {
+      right: 0; }
+    50% {
+      right: 40%; }
+    100% {
+      right: 0; } } }
 
 .njuskalo {
   padding: 15px 20px;
@@ -1450,6 +1602,39 @@ h3 {
   right: -10px;
   bottom: 0;
   transform: scaleX(-1); }
+
+.nacini-placanja {
+  padding: 15px 20px;
+  border-radius: 8px;
+  background-image: linear-gradient(to bottom, rgba(253, 133, 1, 0.91), rgba(253, 112, 1, 0.94));
+  box-shadow: 0 6px 9px 0 rgba(253, 123, 18, 0.37);
+  color: white;
+  position: relative; }
+
+.nacini-placanja__title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 15px; }
+
+.nacini-placanja__desc {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 15px; }
+
+.nacini-placanja__link {
+  color: white;
+  font-weight: 15px;
+  font-weight: 600;
+  margin-right: 10px; }
+  .nacini-placanja__link img {
+    width: 15px;
+    margin-left: 5px; }
+
+.nacini-placanja__img {
+  position: absolute;
+  height: 64px;
+  right: -10px;
+  bottom: 0; }
 
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
