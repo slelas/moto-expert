@@ -536,7 +536,7 @@ h3 {
     }
 
     .process-section {
-        width: 85%;
+        width: 1224px;
         margin-top: 250px;
     }
 
@@ -568,7 +568,10 @@ h3 {
     }
 
     .why__card-container {
-        justify-content: center;
+        justify-content: space-between;
+        width: 1224px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .why__card {
@@ -594,7 +597,9 @@ h3 {
     }
 
     .customers__container--desktop, .customer__redirect--desktop {
-        display: block;
+        display: inline-block;
+        margin-left: 70px;
+        margin-top: 15px;
     }
 
     .customers__container--mobile, .customer__redirect--mobile {
@@ -615,6 +620,22 @@ h3 {
         padding-top: 0;
     }
 
+    .customer__redirect {
+        background-color: #f2d2d2;
+        margin-top: 60px;
+        margin-left: 0;
+    }
+
+    .customer__card {
+        width: 300px;
+        height: 400px;
+        margin-right: 36px;
+    }
+
+    .card__info-container {
+        width: calc(267px - 36px);
+    }
+
     .customer__card {
         -webkit-animation: linear infinite alternate;
         -webkit-animation-name: run;
@@ -622,8 +643,71 @@ h3 {
     }
 
     @-webkit-keyframes run {
-        0% { right: 0;}
-        50%{ right: 40%;}
-        100%{ right: 0;}
+        0% { left: 0;}
+        50%{ left: 50%;}
+        100%{ left: 0;}
+    }
+
+    .customers__bottom-wrapper {
+        justify-content: space-between;
+        width: 1224px;
+        margin-top: 200px;
+    }
+
+    .customers {
+        background-image: url("/images/1440-crvena.png");
+        background-position: center center;
+
+        .njuskalo, .nacini-placanja {
+            width: calc(580px - 60px);
+            padding: 30px;
+        }
+
+        .njuskalo__title {
+            font-size: 30px;
+            font-weight: 600;
+        }
+
+        .njuskalo__desc {
+            font-size: 18px;
+            margin-right: 40px;
+        }
+
+        .njuskalo__link {
+            font-size: 16px;
+        }
+
+        .njuskalo__title, .njuskalo__link, .njuskalo__desc {
+            margin-left: 130px;
+        }
+
+        .njuskalo__img {
+            right: unset;
+            left: -30px;
+            height: 175px;
+            transform: scaleX(1);
+        }
+
+        .nacini-placanja__ {
+            &title {
+                font-size: 30px;
+                font-weight: 600;
+            }
+
+            &desc {
+                font-size: 18px;
+                margin-right: 150px;
+            }
+
+            &link {
+                font-size: 16px;
+            }
+
+            &img {
+                height: 175px;
+                right: -30px;
+                bottom: -1px;
+            }
+        }
     }
 }

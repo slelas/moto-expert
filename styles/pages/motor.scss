@@ -1007,3 +1007,15 @@ html {
         }
     }
 }
+
+@media screen and (min-width: 1440px) {
+    .navigation {
+        .navigation__container {
+            width: 1224px;
+        }
+    }
+
+    .footer__container {
+        width: 1080px;
+    }
+}

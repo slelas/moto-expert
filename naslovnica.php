@@ -190,19 +190,19 @@
             <div class="customers__wrapper">
                 <div class="customers__container customers__container--desktop">
                     <h3>Naša najbolja reklama su naši zadovoljni kupci</h3>
-                    <p>Lorem Khaled Ipsum is a major key to success. The weather is amazing, walk with me through the pathway of more success. Take this journey with me, Lion! Cloth talk. To succeed you must believe. </p>
+                    <p>Lorem Khaled Ipsum is a major key to success. The weather is amazing, walk with me through the pathway of more success. Take this journey with me, Lion! Cloth talk. To succeed you must believe.</p>
+                    <a class="customer__redirect customer__redirect--desktop clearfix" href="">
+                        <img class="customer__redirect-icon" src="/images/customer-redirect.png">
+                        <div class="customer__redirect-text">
+                            <div class="customer__redirect-top">Želite i vi postati zadovoljni kupac?</div>
+                            <div class="customer__redirect-bottom">Provjerite motore u ponudi <img src="/images/arrow-v3.png" /></div>
+                        </div>
+                    </a>
                 </div>
-                <a class="customer__redirect customer__redirect--desktop clearfix" href="">
-                    <img class="customer__redirect-icon" src="/images/customer-redirect.png">
-                    <div class="customer__redirect-text">
-                        <div class="customer__redirect-top">Želite i vi postati zadovoljni kupac?</div>
-                        <div class="customer__redirect-bottom">Provjerite motore u ponudi <img src="/images/arrow-v3.png" /></div>
-                    </div>
-                </a>
             </div>
             <div class="customers__bottom-wrapper">
                 <div class="njuskalo">
-                    <h3 class="njuskalo__title">Lorem Khaled Ipsum</h3>
+                    <h3 class="njuskalo__title">Posjetite Njuškalo trgovinu</h3>
                     <p class="njuskalo__desc">Lorem Khaled Ipsum is a major key to success. Look at the sunset, life is amazing, life is beautiful, life is what you make it.</p>
                     <a class="njuskalo__link" href="">njuskalo.hr <img src="/images/arrow-white.png"></a>
                     <img class="njuskalo__img" src="/images/njuskalo/njuskalo.png">
