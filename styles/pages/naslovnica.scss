@@ -636,18 +636,6 @@ h3 {
         width: calc(267px - 36px);
     }
 
-    .customer__card {
-        -webkit-animation: linear infinite alternate;
-        -webkit-animation-name: run;
-        -webkit-animation-duration: 20s;
-    }
-
-    @-webkit-keyframes run {
-        0% { left: 0;}
-        50%{ left: 50%;}
-        100%{ left: 0;}
-    }
-
     .customers__bottom-wrapper {
         justify-content: space-between;
         width: 1224px;

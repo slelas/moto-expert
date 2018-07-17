@@ -8,9 +8,12 @@
         <link rel="stylesheet" href="/dist/main.min.css">
         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,900" rel="stylesheet">
         <title>Moto Expert</title>
+        <!-- <script src="/scripts/jquery-3.3.1.min.js"></script>
+        <script src="/scripts/script.js"></script> -->
     </head>
     <body>
         <cms:embed 'nav.php' />
+        <img id="Change_Image" src="http://placehold.it/200x200" alt="Letter A">
         <section class="samozanav">
             <section class="redirect redirect--desktop clearfix">
                 <div class="redirect__main-info-container clearfix">
