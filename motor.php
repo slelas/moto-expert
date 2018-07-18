@@ -4,6 +4,7 @@
     <cms:folder name="novo" title="Novo" />
     <cms:folder name="rabljeno" title="Rabljeno" />
     <cms:folder name="u_dolasku" title="U dolasku" />
+    <cms:folder name="prodano" title="Prodano" />
     <cms:editable name='cijena_motora' label='Cijena motora' desc='u HRK' type='text' />
     <cms:repeatable name='kurac' label='kurac'>
         <cms:editable name='kurcina' type='text' />

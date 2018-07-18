@@ -1,130 +1,111 @@
-.contact__container {
-    width: 85%;
-    margin: 0 auto;
-    margin-top: -100px;
+.contact__header {
+    margin-top: 70px;
+    background-image: url("/images/honda.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 265px;
 }
 
-.contact__left-container {
-    background-color: white;
-    border-radius: 3px;
-    box-shadow: 0 7px 23px 0 rgba(15, 43, 55, 0.1);
-    display: inline-block;
-    width: calc(100% - 330px); // Njegov padding, margin od desnog containera
-    // i width od desnog containera.
+.contact__card--screen-desktop {
+    display: none;
+}
 
-    h3 {
-        margin: 0;
-        font-size: 30px;
+.contact__card {
+    width: 280px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    box-shadow: 0 7px 23px 0 rgba(15, 43, 55, 0.1);
+    font-weight: 400;
+    font-size: 17px;
+
+    b {
         font-weight: 600;
-        color: #1f1f1f;
     }
+}
+
+.contact__card-header {
+    font-size: 15px;
+    font-weight: 700;
+    padding: 20px;
+    border-bottom: solid 1px rgba(151, 151, 151, 0.5);
+}
+
+.contact__card-bottom {
+    padding: 20px;
 
     p {
-        font-size: 18px;
-        color: #574c4c;
+        margin-bottom: 30px;
+    }
+}
+
+.contact__card-telephone, .contact__card-mail {
+    display: inline-flex;
+    justify-content: center;
+
+    img {
+        width: 20px;
+        height: 20px;
+        margin-right: 25px;
+    }
+}
+
+.contact__card-mail {
+    margin-top: 15px;
+}
+
+.question-mark {
+    position: absolute;
+    color: rgba(241, 57, 47, 0.1);
+    font-weight: 700;
+
+    &:nth-child(4) {
+        font-size: 200px;
+        right: -10px;
+        bottom: -70px;
     }
 
-    span {
+    &:nth-child(5) {
+        font-size: 70px;
+        right: 100px;
+        bottom: -35px;
+    }
+
+    &:nth-child(6) {
+        font-size: 40px;
+        right: 80px;
+        bottom: 30px;
+    }
+
+    &:nth-child(7) {
         font-size: 20px;
-        font-weight: 600;
+        right: 95px;
+        bottom: 80px;
     }
 }
 
-.contact__reason-container {
-    display: flex;
-    justify-content: space-between;
-}
-
-.contact__reason {
-    width: 140px;
-    height: 140px;
-    border-radius: 8px;
-    background-color: #f1392f;
-    display: inline-block;
-}
-
-.contact__right-container {
-    width: calc(300px - 30px);
-    background-color: white;
+.contact__forms {
     border-radius: 3px;
-    box-shadow: 0 7px 23px 0 rgba(15, 43, 55, 0.1);
-    float: right;
-    display: inline-block;
-    padding: 15px 20px;
-
-    .right-container__description {
-        font-size: 17px;
-        font-weight: 400;
-    }
-
-    .right-container__title {
-        font-weight: 900;
-        font-size: 15px;
-        color: #000;
-    }
-
-    .right-container__contact {
-        display: flex;
-        align-items: center;
-
-        img {
-            width: 20px;
-            margin-right: 20px;
-        }
-        
-        span {
-            font-size: 17px;
-            font-weight: 400;
-        }
-    }
+    background-color: white;
+    box-shadow: 0 0 23px 0 rgba(15, 43, 55, 0.1);
+    width: calc(95% - 20px);
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -20px;
+    position: relative;
 }
 
-.contact__input-container {
-    padding: 35px 85px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+.contact__card--screen-mobile {
+    position: absolute;
+    overflow: hidden;
+    top: -58px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.contact__input {
-    display: inline-block;
-    width: 47%;
-
-    span {
-        display: block;
-    }
-
-    input:focus {
-        border-radius: 8px;
-        box-shadow: 0 0 8px 0 rgba(241, 57, 47, 0.19);
-        background-color: #ffffff;
-        border: solid 2px #f1392f;
-        outline: none;
-    }
-
-    input {
-        padding: 20px;
-        border-radius: 8px;
-        background-color: rgba(181, 181, 200, 0.05);
-        border: solid 2px rgba(181, 181, 200, 0.43);
-        font-size: 18px;
-        width: calc(100% - 40px);
-    }
-}
-
-.contact__input-info {
-    padding: 35px 85px;
-    border-bottom: 1px solid rgba(151, 151, 151, 0.5);
-}
-
-.message {
-    display: block;
-    min-height: 100px;
-    width: 100%;
-    margin-bottom: 80px;
-    
-    textarea {
-        height: 100%;
-        width: 100%;
-    }
+.contact-forms__title {
+    padding-top: 200px;
 }

@@ -23,17 +23,17 @@
                     </div>
                 </div>
                 <div class="redirect__side-info-container">
-                    <a class="redirect__side-info" href="#">
+                    <a class="redirect__side-info" href="<cms:link 'rabljeno.php' />">
                         <img class="redirect__side-info-icon" src="/images/motor/rabljeni-motori.png">
                         <div class="redirect__side-info-label">Rabljena vozila</div>
                         <img class="redirect__side-info-arrow" src="/images/arrow-v2.png">
                     </a>
-                    <a class="redirect__side-info" href="#">
+                    <a class="redirect__side-info" href="<cms:link 'novo.php' />">
                         <img class="redirect__side-info-icon" src="/images/motor/novi-motori.png">
                         <div class="redirect__side-info-label">Nova vozila</div>
                         <img class="redirect__side-info-arrow" src="/images/arrow-v2.png">
                     </a>
-                    <a class="redirect__side-info" href="#">
+                    <a class="redirect__side-info" href="<cms:link 'u-dolasku.php' />">
                         <img class="redirect__side-info-icon" src="/images/motor/u-dolasku.png">
                         <div class="redirect__side-info-label">U dolasku</div>
                         <img class="redirect__side-info-arrow" src="/images/arrow-v2.png">
@@ -184,7 +184,7 @@
                 </div>
                 <a class="arrow-button arrow-button--orientation-right" onclick="plusDivs(+1)"></a>
             </div>
-            <a class="customer__redirect customer__redirect--mobile clearfix" href="">
+            <a class="customer__redirect customer__redirect--mobile clearfix" href="<cms:link 'ponuda-motora.php' />">
                 <img class="customer__redirect-icon" src="/images/customer-redirect.png">
                 <div class="customer__redirect-text">
                     <div class="customer__redirect-top">Želite i vi postati zadovoljni kupac?</div>
@@ -195,7 +195,7 @@
                 <div class="customers__container customers__container--desktop">
                     <h3>Naša najbolja reklama su naši zadovoljni kupci</h3>
                     <p>Lorem Khaled Ipsum is a major key to success. The weather is amazing, walk with me through the pathway of more success. Take this journey with me, Lion! Cloth talk. To succeed you must believe.</p>
-                    <a class="customer__redirect customer__redirect--desktop clearfix" href="">
+                    <a class="customer__redirect customer__redirect--desktop clearfix" href="<cms:link 'ponuda-motora.php' />">
                         <img class="customer__redirect-icon" src="/images/customer-redirect.png">
                         <div class="customer__redirect-text">
                             <div class="customer__redirect-top">Želite i vi postati zadovoljni kupac?</div>
@@ -208,7 +208,7 @@
                 <div class="njuskalo">
                     <h3 class="njuskalo__title">Posjetite Njuškalo trgovinu</h3>
                     <p class="njuskalo__desc">Lorem Khaled Ipsum is a major key to success. Look at the sunset, life is amazing, life is beautiful, life is what you make it.</p>
-                    <a class="njuskalo__link" href="">njuskalo.hr <img src="/images/arrow-white.png"></a>
+                    <a class="njuskalo__link" target="_blank" href="https://www.njuskalo.hr/trgovina/motoexpert">njuskalo.hr <img src="/images/arrow-white.png"></a>
                     <img class="njuskalo__img" src="/images/njuskalo/njuskalo.png">
                 </div>
                 <div class="nacini-placanja">

@@ -111,6 +111,9 @@ li {
 
         .navigation__item {
             padding: 28px 24px 20px 24px;
+        }
+
+        .navigation__item--state-active {
             border-bottom: 4px solid;
             border-radius: 2px;
             border-color: #f1392f;
@@ -566,6 +569,10 @@ html {
     
     li {
         margin-right: 50px;
+
+        a {
+            color: #767676;
+        }
 
         &:last-child {
             margin-right: 0px;

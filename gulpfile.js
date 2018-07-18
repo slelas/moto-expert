@@ -30,8 +30,8 @@ gulp.task('browserSync', function() {
     browserSync.init({
         proxy: "localhost",
         port: 80
-        /* server: {
-            baseDir: './'
-        } */
+        // server: {
+        //     baseDir: './'
+        // }
     })
 })

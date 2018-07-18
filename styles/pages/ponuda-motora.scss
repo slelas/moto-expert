@@ -23,6 +23,10 @@
     margin-bottom: 0;
 }
 
+.sold {
+    filter: grayscale(100%);
+}
+
 .motor-list__filter {
     display: flex;
     align-items: center;

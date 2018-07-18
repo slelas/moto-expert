@@ -17,10 +17,9 @@
             <img src="/images/instagram.svg" alt="">
         </div>
         <ul class="footer__navigation">
-            <li>Naslovnica</li>
-            <li>Motori</li>
-            <li>Način plaćanja</li>
-            <li>Kontakt</li>
+            <li><a href="<cms:link 'index.php' />">Naslovnica</a></li>
+            <li><a href="<cms:link 'ponuda-motora.php' />">Ponuda motora</a></li>
+            <li><a href="<cms:link 'index.php' />">Kontakt</a></li>
         </ul>
     </div>
     <div class="footer__signature">
