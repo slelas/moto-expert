@@ -1,0 +1,127 @@
+@media screen and (min-width: 1440px) {
+  .arrow-button {
+    border-radius: 15px;
+    display: inline-block;
+    position: relative;
+    font-size: 16px;
+    font-weight: 600;
+    color: navy;
+    font-family: 'Roboto';
+    height: 32px;
+  
+    &::before {
+      content: '';
+      padding: 16px;
+      margin-bottom: -10px;
+      border-radius: 50%;
+      display: inline-block;
+      background-size: 7px;
+      background-color: white;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-image: url("/images/black-left.svg");
+      box-shadow: 0 40px 80px 0 rgba(37, 115, 255, .04), 0 40px 80px 0 rgba(35, 51, 66, .04), 0 10px 20px 0 rgba(37, 115, 255, .04), 0 10px 20px 0 rgba(35, 51, 66, .04);
+    }
+  }
+  
+  .arrow-button--orientation {
+    &-up {
+      &::before {
+        background-image: url('./images/icons/arrows/black-up.svg');
+        background-size: 12px;
+      }
+    }
+  
+    &-right {
+      &::before {
+        background-image: url("/images/black-right.svg");
+        background-size: 7px;
+      }
+    }
+  
+    &-down {
+      &::before {
+        background-image: url('./images/icons/arrows/black-down.svg');
+        background-size: 12px;
+      }
+    }
+  }
+  
+  .arrow-button--shadow-none {
+    &::before {
+      box-shadow: none;
+    }
+  }
+  
+  .arrow-button--list-item {
+    height: auto;
+    padding: 15px 25px;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 40px;
+    transition: background-color .25s ease-in-out, box-shadow .25s ease-in-out;
+  
+    &::before {
+      background-color: transparent;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 10px;
+      box-shadow: none;
+    }
+  
+    &:hover {
+      background-color: white;
+      box-shadow: 0 40px 80px 0 rgba(37, 115, 255, .04), 0 40px 80px 0 rgba(35, 51, 66, .04), 0 10px 20px 0 rgba(37, 115, 255, .04), 0 10px 20px 0 rgba(35, 51, 66, .04);
+    }
+  }
+  
+  .arrow-button--select {
+    border: 0;
+    background-color: #fff;
+    appearance: none;
+    background-size: 12px;
+    background-position: right 20px center;
+    background-repeat: no-repeat;
+    background-image: url('./images/icons/arrows/black-down.svg');
+  
+    &:focus {
+      background-image: url('./images/icons/arrows/black-up.svg');
+    }
+  }
+  
+  .arrow-button--badge-visible {
+    &::after {
+      content: attr(badge);
+      color: rgba(255, 255, 255, .95);
+      background-color: blue;
+      padding: 3px 9px;
+      font-size: 15px;
+      margin-top: -3px;
+      font-weight: 500;
+      border-radius: 11px;
+      box-shadow: 0 40px 80px 0 rgba(37, 115, 255, .04), 0 40px 80px 0 rgba(35, 51, 66, .04), 0 10px 20px 0 rgba(37, 115, 255, .04), 0 10px 20px 0 rgba(35, 51, 66, .04);
+      margin-right: 10px;
+      float: left;
+    }
+  }
+  
+  .arrow-button--title-visible {
+    &::before {
+      margin-right: 10px;
+      margin-bottom: -5px;
+    }
+  
+    &::after {
+      content: attr(title);
+      font-size: 11px;
+      line-height: 15px;
+      color: gray;
+      text-transform: uppercase;
+      font-weight: 400;
+      position: absolute;
+      top: 0;
+      left: 42px;
+    }
+  }
+}

@@ -1568,7 +1568,11 @@ h3 {
     width: 480px; }
   .customers__slider {
     width: calc(50% - 60px);
-    padding-top: 0; }
+    padding-top: 0;
+    justify-content: flex-end;
+    align-items: center;
+    display: flex;
+    height: unset; }
   .customer__redirect {
     background-color: #f2d2d2;
     margin-top: 60px;
@@ -1576,7 +1580,13 @@ h3 {
   .customer__card {
     width: 300px;
     height: 400px;
-    margin-right: 36px; }
+    margin-right: 30px;
+    margin-bottom: 70px; }
+    .customer__card:nth-of-type(2), .customer__card:nth-of-type(3), .customer__card:nth-of-type(4), .customer__card:nth-of-type(5) {
+      display: none; }
+  .arrow-button {
+    margin-right: 30px;
+    cursor: pointer; }
   .card__info-container {
     width: calc(267px - 36px); }
   .customers__bottom-wrapper {
@@ -1682,6 +1692,92 @@ h3 {
   height: 64px;
   right: -10px;
   bottom: 0; }
+
+@media screen and (min-width: 1440px) {
+  .arrow-button {
+    border-radius: 15px;
+    display: inline-block;
+    position: relative;
+    font-size: 16px;
+    font-weight: 600;
+    color: navy;
+    font-family: 'Roboto';
+    height: 32px; }
+    .arrow-button::before {
+      content: '';
+      padding: 16px;
+      margin-bottom: -10px;
+      border-radius: 50%;
+      display: inline-block;
+      background-size: 7px;
+      background-color: white;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-image: url("/images/black-left.svg");
+      box-shadow: 0 40px 80px 0 rgba(37, 115, 255, 0.04), 0 40px 80px 0 rgba(35, 51, 66, 0.04), 0 10px 20px 0 rgba(37, 115, 255, 0.04), 0 10px 20px 0 rgba(35, 51, 66, 0.04); }
+  .arrow-button--orientation-up::before {
+    background-image: url("./images/icons/arrows/black-up.svg");
+    background-size: 12px; }
+  .arrow-button--orientation-right::before {
+    background-image: url("/images/black-right.svg");
+    background-size: 7px; }
+  .arrow-button--orientation-down::before {
+    background-image: url("./images/icons/arrows/black-down.svg");
+    background-size: 12px; }
+  .arrow-button--shadow-none::before {
+    box-shadow: none; }
+  .arrow-button--list-item {
+    height: auto;
+    padding: 15px 25px;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 40px;
+    transition: background-color .25s ease-in-out, box-shadow .25s ease-in-out; }
+    .arrow-button--list-item::before {
+      background-color: transparent;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 10px;
+      box-shadow: none; }
+    .arrow-button--list-item:hover {
+      background-color: white;
+      box-shadow: 0 40px 80px 0 rgba(37, 115, 255, 0.04), 0 40px 80px 0 rgba(35, 51, 66, 0.04), 0 10px 20px 0 rgba(37, 115, 255, 0.04), 0 10px 20px 0 rgba(35, 51, 66, 0.04); }
+  .arrow-button--select {
+    border: 0;
+    background-color: #fff;
+    appearance: none;
+    background-size: 12px;
+    background-position: right 20px center;
+    background-repeat: no-repeat;
+    background-image: url("./images/icons/arrows/black-down.svg"); }
+    .arrow-button--select:focus {
+      background-image: url("./images/icons/arrows/black-up.svg"); }
+  .arrow-button--badge-visible::after {
+    content: attr(badge);
+    color: rgba(255, 255, 255, 0.95);
+    background-color: blue;
+    padding: 3px 9px;
+    font-size: 15px;
+    margin-top: -3px;
+    font-weight: 500;
+    border-radius: 11px;
+    box-shadow: 0 40px 80px 0 rgba(37, 115, 255, 0.04), 0 40px 80px 0 rgba(35, 51, 66, 0.04), 0 10px 20px 0 rgba(37, 115, 255, 0.04), 0 10px 20px 0 rgba(35, 51, 66, 0.04);
+    margin-right: 10px;
+    float: left; }
+  .arrow-button--title-visible::before {
+    margin-right: 10px;
+    margin-bottom: -5px; }
+  .arrow-button--title-visible::after {
+    content: attr(title);
+    font-size: 11px;
+    line-height: 15px;
+    color: gray;
+    text-transform: uppercase;
+    font-weight: 400;
+    position: absolute;
+    top: 0;
+    left: 42px; } }
 
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document

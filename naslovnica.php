@@ -8,12 +8,11 @@
         <link rel="stylesheet" href="/dist/main.min.css">
         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,900" rel="stylesheet">
         <title>Moto Expert</title>
-        <!-- <script src="/scripts/jquery-3.3.1.min.js"></script>
-        <script src="/scripts/script.js"></script> -->
+        <script src="/scripts/jquery-3.3.1.min.js"></script>
+        <script src="/scripts/script.js"></script>
     </head>
     <body>
         <cms:embed 'nav.php' />
-        <img id="Change_Image" src="http://placehold.it/200x200" alt="Letter A">
         <section class="samozanav">
             <section class="redirect redirect--desktop clearfix">
                 <div class="redirect__main-info-container clearfix">
@@ -126,6 +125,7 @@
                 <p>Lorem Khaled Ipsum is a major key to success. The weather is amazing, walk with me through the pathway of more success. Take this journey with me, Lion! Cloth talk. To succeed you must believe. </p>
             </div>
             <div class="customers__slider">
+                <a class="arrow-button" onclick="plusDivs(-1)"></a>
                 <div class="customer__card">
                     <div class="card__info-container">
                         <div class="card__model">HONDA CBR</div>
@@ -182,6 +182,7 @@
                         <div class="card__person">M. Viđak</div>
                     </div>
                 </div>
+                <a class="arrow-button arrow-button--orientation-right" onclick="plusDivs(+1)"></a>
             </div>
             <a class="customer__redirect customer__redirect--mobile clearfix" href="">
                 <img class="customer__redirect-icon" src="/images/customer-redirect.png">
@@ -218,9 +219,6 @@
                     <img class="nacini-placanja__img" src="/images/nacini-placanja.svg">
                 </div>
             </div>
-        </section>
-        <section class="more-info__wrapper">
-            
         </section>
         <cms:embed 'footer.php' />
     </body>
