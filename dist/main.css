@@ -719,8 +719,6 @@ html {
   border-bottom: 1px solid #f4f4f4;
   position: relative;
   background-color: white; }
-  .motor-list__filter:first-child {
-    background-color: #f8fcf8; }
   .motor-list__filter:last-child {
     box-shadow: 0 5px 13px 0 rgba(186, 144, 144, 0.2); }
   .motor-list__filter span {
@@ -732,7 +730,7 @@ html {
   width: 100px; }
 
 .motor-list__filter-img {
-  width: 70px; }
+  width: 25px; }
 
 .motor-list__filter-indicator {
   width: 5px;
@@ -940,9 +938,10 @@ html {
     border-bottom: none;
     border-right: 1px solid #cacaca;
     text-align: center; }
+    .motor-list__filter--state-active {
+      background-color: #5eb66f !important;
+      box-shadow: 0 4px 7px 0 rgba(70, 153, 86, 0.34) !important; }
     .motor-list__filter:first-child {
-      background-color: #5eb66f;
-      box-shadow: 0 4px 7px 0 rgba(70, 153, 86, 0.34);
       border-top-left-radius: 10px;
       border-bottom-left-radius: 10px; }
     .motor-list__filter:last-child {

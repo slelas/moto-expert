@@ -56,12 +56,12 @@
         desc='2008.'
         type='text'>
     </cms:editable>
-    <cms:editable 
-        type='reverse_relation' 
+    <cms:editable
+        type='reverse_relation'
         name='motor_images'
-        masterpage='gallery.php' 
-        field='motor_image' 
-        anchor_text='View images' 
+        masterpage='gallery.php'
+        field='motor_image'
+        anchor_text='View images'
         label='Gallery'
     />
     <cms:editable
@@ -280,8 +280,8 @@
                             <img src="/images/motor/shape_4@3x.png">
                         </div>
                         <div class="vehicle__contact">
-                            <span>Želiš kupiti ovaj motor?</span>
-                            <a href="#">Javi nam se</a>
+                            <span>Želite kupiti ovaj motor?</span>
+                            <a href="<cms:link 'kontakt.php' />">Javite nam se</a>
                             <img src="/images/motor/icon-send@3x.png" alt="Send message icon">
                         </div>
                         <img class="motor-price-icon" src="/images/motor/shape_4@3x.png">

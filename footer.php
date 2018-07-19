@@ -19,7 +19,7 @@
         <ul class="footer__navigation">
             <li><a href="<cms:link 'index.php' />">Naslovnica</a></li>
             <li><a href="<cms:link 'ponuda-motora.php' />">Ponuda motora</a></li>
-            <li><a href="<cms:link 'index.php' />">Kontakt</a></li>
+            <li><a href="<cms:link 'kontakt.php' />">Kontakt</a></li>
         </ul>
     </div>
     <div class="footer__signature">
