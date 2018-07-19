@@ -19,31 +19,31 @@
             <input id="collapsible" class="toggle" type="checkbox">
             <label for="collapsible" class="lbl-toggle">VRSTA VOZILA <div class="arrow-circle"><img src="/images/arrow.png"></div></label>
             <div class="motor-list__filters">
-                <a href="<cms:link 'ponuda-motora.php' />" class="motor-list__filter">
+                <a href="<cms:link 'ponuda-motora.php' />" class="motor-list__filter motor-list__filter--state-active">
                     <div class="motor-list__filter-imgs">
-                        <img class="motor-list__filter-img" src="/images/circle.svg">
-                        <img class="motor-list__filter-img" src="/images/circle.svg">
-                        <img class="motor-list__filter-img" src="/images/circle.svg">
+                        <img class="motor-list__filter-img" src="/images/svi-motocikli-1-bijelo.svg">
+                        <img class="motor-list__filter-img" src="/images/svi-motocikli-2-bijelo.svg">
+                        <img class="motor-list__filter-img" src="/images/svi-motocikli-3-bijelo.svg">
                     </div>
-                    <span class="motor-list__filter-title">SVI MOTOCIKLI</span>
+                    <span class="motor-list__filter-title" style="color: white;">SVI MOTOCIKLI</span>
                     <div class="motor-list__filter-indicator"></div>
                 </a>
                 <a href="<cms:link 'rabljeno.php' />" class="motor-list__filter">
                     <div class="motor-list__filter-imgs">
-                        <img class="motor-list__filter-img" src="/images/circle.svg">
-                        <img class="motor-list__filter-img" src="/images/circle.svg">
+                        <img class="motor-list__filter-img" src="/images/rabljeni-motocikli-1.svg">
+                        <img class="motor-list__filter-img" src="/images/rabljeni-motocikli-2.svg">
                     </div>
                     <span class="motor-list__filter-title">RABLJENI MOTOCIKLI</span>
                 </a>
                 <a href="<cms:link 'novo.php' />" class="motor-list__filter">
                     <div class="motor-list__filter-imgs">
-                        <img class="motor-list__filter-img" src="/images/circle.svg">
+                        <img class="motor-list__filter-img" src="/images/novi-motocikli-1.svg">
                     </div>
                     <span class="motor-list__filter-title">NOVI MOTOCIKLI</span>
                 </a>
                 <a href="<cms:link 'u-dolasku.php' />" class="motor-list__filter">
                     <div class="motor-list__filter-imgs">
-                        <img class="motor-list__filter-img" src="/images/circle.svg">
+                        <img class="motor-list__filter-img" src="/images/u-dolasku-1.svg">
                     </div>
                     <span class="motor-list__filter-title">U DOLASKU</span>
                 </a>
