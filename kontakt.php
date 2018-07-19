@@ -36,12 +36,17 @@
                 </div>
                 <h3 class="contact-forms__title">Pošaljite nam e-mail</h3>
                 <p class="contact-forms__desc">Lorem Khaled Ipsum is a major key to success. The key to success is to keep your head above the water, never give up. You smart, you loyal, you a genius. It’s on you how you want to live your life.</p>
-                <form action="">
+                <cms:form action='' method='post' id='contact_form'>
                     <h4>Razlog kontakta</h4>
                     <cms:input type="radio" name="size" opt_values="Small=small | Medium=medium | Large=large | Huge=huge" /><br />
                     Ime i prezime: <cms:input type="text" name="ime-prezime" /><br />
+                    Mail: <cms:input type="text" name="mail" /><br />
                     <textarea name="contact-message" id="" cols="30" rows="10"></textarea>
-                </form>
+                    <input type="submit" id='send_message' class='button' value='Submit' />
+                    <cms:send_mail from=k_email_from to=k_email_to subject='Upit'>
+                    asdasd
+                    </cms:send_mail>
+                </cms:form>
             </div>
             <div class="contact__card contact__card--screen-desktop">
                 <div class="contact__card-header">KONTAKT INFORMACIJE</div>

@@ -726,8 +726,7 @@ html {
   width: 100px; }
 
 .motor-list__filter-img {
-  height: 25px;
-  width: 25px; }
+  width: 70px; }
 
 .motor-list__filter-indicator {
   width: 5px;
@@ -819,7 +818,8 @@ html {
     letter-spacing: 3.5px;
     color: #f1392f;
     font-size: 14px;
-    font-weight: 700; }
+    font-weight: 700;
+    text-transform: uppercase; }
   .motor-list__card .card__title {
     font-weight: 600;
     font-size: 25px;

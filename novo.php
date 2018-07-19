@@ -7,7 +7,7 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="/dist/main.min.css">
         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,900" rel="stylesheet">
-        <title>Ponuda motora | Moto Expert</title>
+        <title>Novo | Moto Expert</title>
     </head>
     <body>
         <cms:embed 'nav.php' />

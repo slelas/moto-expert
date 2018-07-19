@@ -55,8 +55,7 @@
 }
 
 .motor-list__filter-img {
-    height: 25px;
-    width: 25px;
+    width: 70px;
 }
 
 .motor-list__filter-indicator {
@@ -182,6 +181,7 @@
         color: #f1392f;
         font-size: 14px;
         font-weight: 700;
+        text-transform: uppercase;
     }
 
     .card__title {

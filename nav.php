@@ -8,7 +8,7 @@
         <label for="menu-toggle" class="cross-container">
             <img class="cross" src="/images/cross.png">
         </label>
-        <img class="navigation__logo" src="/images/moto-expert-logo.svg" alt="Moto Expert logo">
+        <a href="<cms:link 'index.php' />"><img class="navigation__logo" src="/images/moto-expert-logo.svg" alt="Moto Expert logo"></a>
         <a class="navigation__button" href="<cms:link 'kontakt.php' />">
             <img class="button__icon" src="/images/send-message-icon.svg" alt="Send message icon">
             <span class="button__text">Kontaktirajte nas</span>
