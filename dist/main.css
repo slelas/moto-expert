@@ -691,6 +691,12 @@ html {
   color: white;
   text-align: center; }
 
+.samozanav {
+  background-image: url("/images/pexels-photo-980382.jpeg");
+  background-position: center -400px;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
 .motor-list__header-title {
   font-size: 30px;
   font-weight: 600;
@@ -1032,7 +1038,19 @@ html {
       display: block;
       color: #2f2323;
       opacity: 0.55;
-      font-size: 18px; } }
+      font-size: 18px; }
+  .motor-list__header {
+    padding-left: 0;
+    padding-right: 0; }
+    .motor-list__header .motor-list__header-title, .motor-list__header .motor-list__header-desc {
+      width: 1224px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: left;
+      padding-left: 0;
+      padding-right: 0; }
+  .motor-list {
+    width: 1224px; } }
 
 .contact__header {
   margin-top: 70px;

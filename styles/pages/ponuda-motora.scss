@@ -9,6 +9,13 @@
     text-align: center;
 }
 
+.samozanav {
+    background-image: url("/images/pexels-photo-980382.jpeg");
+    background-position: center -400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .motor-list__header-title {
     font-size: 30px;
     font-weight: 600;
@@ -515,5 +522,25 @@
             opacity: 0.55;
             font-size: 18px;
         }
+    }
+
+    .motor-list__header {
+        padding-left: 0;
+        padding-right: 0;
+
+        
+
+        .motor-list__header-title, .motor-list__header-desc {
+            width: 1224px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: left;
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+
+    .motor-list {
+        width: 1224px;
     }
 }
