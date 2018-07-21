@@ -89,11 +89,11 @@
 
     // 13.
     // Your Email address. Will be used in contact forms.
-    define( 'K_EMAIL_TO', 'youremail@gmail.com' );
+    define( 'K_EMAIL_TO', 'stipe@dump.hr' );
 
     // 14.
     // Will be used as the sender of messages delivered by contact forms to the address above.
-    define( 'K_EMAIL_FROM', 'contact@yourdomain.com' );
+    define( 'K_EMAIL_FROM', 'no-reply@motoexpert.hr');
 
     // 15.
     // By default the inbuilt php function 'mail()' is used to deliver messages.
