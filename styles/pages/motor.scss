@@ -93,6 +93,11 @@ li {
         background-color: #f1392f;
         border-radius: 20px;
         box-shadow: 0 5px 10px 0 rgba(186, 51, 43, 0.31);
+        transition: transform ease-in-out .25s;
+
+        &:hover {
+            transform: scale(1.05);
+        }
 
         .button__icon {
             height: 14px;
