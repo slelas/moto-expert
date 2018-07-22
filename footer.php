@@ -5,16 +5,16 @@
             <img src="/images/moto-expert-logo.svg">
             <div class="company-info__container">
                 <span>Moto Expert d.o.o.</span>
-                <p>OIB: 50235560247; MB: 04654293</p>
-                <p>Žiro račun: 2360000 – 1102192162 kod Zagrebačke banke d.d.</p>
+                <p>OIB: <cms:get_custom_field 'oib_tvrtke' masterpage='informacije.php' />; MB: <cms:get_custom_field 'mb_tvrtke' masterpage='informacije.php' /></p>
+                <p>Žiro račun: <cms:get_custom_field 'ziro_racun' masterpage='informacije.php' /></p>
             </div>
         </div>
         <div class="footer__contact">
             <span>Kontaktirajte nas</span>
-            <span>+385 98 299 055</span>
-            <span>info@motoexpert.hr</span>
-            <img src="/images/facebook.svg" alt="">
-            <img src="/images/instagram.svg" alt="">
+            <span><cms:get_custom_field 'broj_telefona' masterpage='informacije.php' /></span>
+            <span><cms:get_custom_field 'email_tvrtke' masterpage='informacije.php' /></span>
+            <a href="<cms:get_custom_field 'facebook_link' masterpage='informacije.php' />"><img src="/images/facebook.svg"></a>
+            <a href="<cms:get_custom_field 'instagram_link' masterpage='informacije.php' />"><img src="/images/instagram.svg"></a>
         </div>
         <ul class="footer__navigation">
             <li><a href="<cms:link 'index.php' />">Naslovnica</a></li>
@@ -24,7 +24,7 @@
     </div>
     <div class="footer__signature">
         <span class="footer__fire">Made with 🔥</span>
-        <span class="footer__fuel">FUEL CO.</span>
+        <span class="footer__fuel">FUEL</span>
     </div>
 </footer>
 <?php COUCH::invoke(); ?>

@@ -12,8 +12,8 @@
     <body>
         <cms:embed 'nav.php' />
         <header class="motor-list__header">
-            <h1 class="motor-list__header-title">Super veliki naslov o predobrim motorima</h1>
-            <h3 class="motor-list__header-desc">Lorem Khaled Ipsum is a major key to success. Look at the sunset, life is amazing, life is beautiful, life is what you make it.</h3>
+            <h1 class="motor-list__header-title">Posebno izabrana ponuda motora</h1>
+            <h3 class="motor-list__header-desc">Pogledajte listu i odaberite najbolji motor za sebe</h3>
         </header>
         <div class="motor-list__filters-collapsible" id="motor-list">
             <input id="collapsible" class="toggle" type="checkbox">
@@ -51,13 +51,13 @@
         </div>
         <section class="motor-list">
             <h2 class="motor-list__main-title">Lista vozila</h3>
-            <cms:pages masterpage='motor.php' limit='10' paginate='1'>
+            <cms:pages masterpage='motor.php' limit='10' paginate='0'>
                 <a href="<cms:show k_page_link />" class="motor-list__card <cms:if k_page_foldertitle=='Prodano'>sold</cms:if> clearfix">
                     <div class="card__image" style='background-image: url("<cms:show motor_slika />");'></div>
                     <div class="card__main-info-container">
                         <div class="card__main-info clearfix">
                             <div class="card__main-info-left">
-                                <div class="card__category"><cms:show k_page_foldertitle /> VOZILO</div>
+                                <div class="card__category"><cms:show k_page_foldertitle /></div>
                                 <div class="card__title"><cms:show k_page_title /></div>
                                 <div class="card__date"><b>Objavljeno:</b> <cms:date k_page_date format='d.m.Y.' /></div>
                             </div>
@@ -82,7 +82,7 @@
                                 </div>
                                 <div class="card__specification-text">
                                     <span class="specification-text__category">KILOMETRI</span>
-                                    <span class="specification-text__info"><cms:show kilometri /> km</span>
+                                    <span class="specification-text__info"><cms:number_format kilometri thousands_separator=' ' decimal_precision='0' /> km</span>
                                 </div>
                             </div>
                             <div class="card__specification">
@@ -123,6 +123,7 @@
                     </cms:if>
                 </cms:if>
             </cms:pages>
+            <span class="no-more">Nema više vozila u ovoj listi.</span>
         </section>
         <cms:embed 'footer.php' />
     </body>

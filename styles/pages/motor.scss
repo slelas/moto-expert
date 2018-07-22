@@ -32,6 +32,10 @@ li {
     box-shadow: 0 5px 11px 0 rgba(28, 22, 22, 0.24);
     margin-right: 35px;
     margin-top: 30px;
+
+    &:first-of-type {
+        margin-top: 15px;
+    }
 }
 
 #menu-toggle {
@@ -198,9 +202,12 @@ html {
         opacity: 0.6;
         background-color: #ececec;
         margin: 0 auto;
+        background-position: center;
+        background-size: 20px;
+        background-repeat: no-repeat;
 
         img {
-            display: block;
+            display: none;
             margin: 0 auto;
             max-width: 20px;
             padding-top: 11px;
@@ -456,6 +463,7 @@ html {
 
     h3 {
         margin: 0px;
+        margin-bottom: 10px;
         font-size: 30px;
         font-weight: 600;
     }
@@ -463,6 +471,7 @@ html {
     p {
         font-weight: 400;
         font-size: 18px;
+        line-height: 1.3;
     }
 }
 
@@ -792,6 +801,12 @@ html {
     }
 }
 
+@media screen and (min-width: 900px) {
+    .navigation__item--desktop {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .vehicle__main-info {
         display: block;
@@ -910,7 +925,8 @@ html {
     }
 
     .footer__signature {
-        padding-bottom: 120px;
+        padding-bottom: 30px;
+        margin-bottom: 0;
     }
 
     .vehicle__main-info {
@@ -1020,6 +1036,10 @@ html {
         .navigation__container {
             width: 1224px;
         }
+    }
+
+    .vehicle {
+        width: 1224px;
     }
 
     .footer__container {

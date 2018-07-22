@@ -28,6 +28,8 @@ li {
   box-shadow: 0 5px 11px 0 rgba(28, 22, 22, 0.24);
   margin-right: 35px;
   margin-top: 30px; }
+  .vehicle__photo:first-of-type {
+    margin-top: 15px; }
 
 #menu-toggle {
   display: none; }
@@ -154,9 +156,12 @@ html {
     border-radius: 50%;
     opacity: 0.6;
     background-color: #ececec;
-    margin: 0 auto; }
+    margin: 0 auto;
+    background-position: center;
+    background-size: 20px;
+    background-repeat: no-repeat; }
     .vehicle__main-info .main-info__characteristic-img img {
-      display: block;
+      display: none;
       margin: 0 auto;
       max-width: 20px;
       padding-top: 11px; }
@@ -339,11 +344,13 @@ html {
     border-bottom: none; }
   .vehicle__equipment-section h3 {
     margin: 0px;
+    margin-bottom: 10px;
     font-size: 30px;
     font-weight: 600; }
   .vehicle__equipment-section p {
     font-weight: 400;
-    font-size: 18px; }
+    font-size: 18px;
+    line-height: 1.3; }
 
 .vehicle__equipment-card {
   padding: 20px 25px;
@@ -546,6 +553,10 @@ html {
   label {
     cursor: pointer; } }
 
+@media screen and (min-width: 900px) {
+  .navigation__item--desktop {
+    display: none; } }
+
 @media screen and (max-width: 768px) {
   .vehicle__main-info {
     display: block; }
@@ -616,7 +627,8 @@ html {
     margin-top: 20px;
     padding-bottom: 20px; }
   .footer__signature {
-    padding-bottom: 120px; }
+    padding-bottom: 30px;
+    margin-bottom: 0; }
   .vehicle__main-info {
     padding: 15px;
     width: calc(100% - 30px); }
@@ -678,6 +690,8 @@ html {
 @media screen and (min-width: 1440px) {
   .navigation .navigation__container {
     width: 1224px; }
+  .vehicle {
+    width: 1224px; }
   .footer__container {
     width: 1080px; } }
 
@@ -690,12 +704,6 @@ html {
   padding: 40px 20px;
   color: white;
   text-align: center; }
-
-.samozanav {
-  background-image: url("/images/pexels-photo-980382.jpeg");
-  background-position: center -400px;
-  background-size: cover;
-  background-repeat: no-repeat; }
 
 .motor-list__header-title {
   font-size: 30px;
@@ -712,6 +720,23 @@ html {
 .sold {
   filter: grayscale(100%); }
 
+.no-more {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  opacity: .5;
+  margin-bottom: 20px; }
+
+@media screen and (min-width: 768px) {
+  .no-more {
+    font-size: 20px; } }
+
+@media screen and (min-width: 1024px) {
+  .no-more {
+    margin-bottom: 0;
+    margin-top: 40px; } }
+
 .motor-list__filter {
   display: flex;
   align-items: center;
@@ -719,6 +744,9 @@ html {
   border-bottom: 1px solid #f4f4f4;
   position: relative;
   background-color: white; }
+  .motor-list__filter--state-active {
+    background-color: #f1392f;
+    opacity: 0.9; }
   .motor-list__filter:last-child {
     box-shadow: 0 5px 13px 0 rgba(186, 144, 144, 0.2); }
   .motor-list__filter span {
@@ -736,8 +764,7 @@ html {
   width: 5px;
   height: 28px;
   border-radius: 2.5px;
-  background-color: #66ba76;
-  box-shadow: 0 0 4px 0 rgba(94, 182, 111, 0.53);
+  background-color: white;
   position: absolute;
   left: 0;
   margin-top: -1px; }
@@ -790,7 +817,9 @@ html {
 
 .motor-list__main-title {
   margin-left: 15px;
-  font-weight: 600; }
+  font-weight: 600;
+  margin-top: 30px;
+  margin-bottom: 20px; }
 
 .motor-list__card {
   border-radius: 5px;
@@ -1040,7 +1069,9 @@ html {
       font-size: 18px; }
   .motor-list__header {
     padding-left: 0;
-    padding-right: 0; }
+    padding-right: 0;
+    padding-top: 150px;
+    padding-bottom: 150px; }
     .motor-list__header .motor-list__header-title, .motor-list__header .motor-list__header-desc {
       width: 1224px;
       margin-left: auto;
@@ -1215,7 +1246,7 @@ html {
     position: relative;
     overflow: hidden; }
   .contact__forms {
-    width: calc(100% - 280px - 80px - 20px);
+    width: calc(100% - 280px - 40px - 20px);
     float: left;
     margin-bottom: 50px; }
   .contact-forms__title {
@@ -1223,7 +1254,8 @@ html {
 
 @media screen and (min-width: 1024px) {
   .contact__forms {
-    padding: 40px; }
+    padding: 40px;
+    width: calc(100% - 280px - 80px - 20px); }
   #contact {
     display: flex;
     flex-wrap: wrap;
@@ -1231,16 +1263,24 @@ html {
   .input--wrapper {
     width: 48%; }
     .input--wrapper:last-of-type {
-      width: 100%; } }
+      width: 100%; }
+  .contact__header {
+    height: 500px; } }
 
 @media screen and (min-width: 1440px) {
   .contact__container {
     width: 1224px; } }
 
 .samozanav {
-  margin-top: 70px;
+  background-image: url("/images/pexels-photo-980382.jpeg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
   height: 300px;
-  background-color: red; }
+  margin-top: 70px; }
+
+html {
+  overflow-y: scroll; }
 
 p,
 h1,
@@ -1398,15 +1438,22 @@ h3 {
   height: 330px;
   width: 250px;
   display: inline-block;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.45)), url("/images/zadovoljan.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   border-radius: 8px;
   position: relative;
   margin-right: 20px; }
-  .customer__card:last-child {
-    margin-right: 0; }
+  .customer__card:nth-of-type(1) {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.45)), url("/images/t-vitaljic.jpg"); }
+  .customer__card:nth-of-type(2) {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.45)), url("/images/d-jadresic.jpg"); }
+  .customer__card:nth-of-type(3) {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.45)), url("/images/s-perko.jpg"); }
+  .customer__card:nth-of-type(4) {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.45)), url("/images/g-radetic.jpg"); }
+  .customer__card:nth-of-type(5) {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.45)), url("/images/r-babo.jpg"); }
 
 .customers__slider {
   overflow-x: scroll;

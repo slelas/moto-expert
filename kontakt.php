@@ -7,7 +7,7 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="/dist/main.min.css">
         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,900" rel="stylesheet">
-        <title>Kontakt — Moto Expert</title>
+        <title>Kontakt | Moto Expert</title>
         <script src="/scripts/jquery-3.3.1.min.js"></script>
         <script src="/scripts/script.js"></script>
         <script type="text/javascript" src="js/contact.js"></script>
@@ -23,11 +23,11 @@
                         <p>Imate pitanje, treba Vam opširniji odgovor? <b>Javite nam se.</b></p>
                         <div class="contact__card-telephone">
                             <img src="/images/iconmonstr-phone-1-24.png">
-                            <span>+385 91 132 3213</span>
+                            <span><cms:get_custom_field 'broj_telefona' masterpage='informacije.php' /></span>
                         </div>
                         <div class="contact__card-mail">
                             <img src="/images/iconmonstr-email-2-24.png">
-                            <span>info@motoexpert.hr</span>
+                            <span><cms:get_custom_field 'email_tvrtke' masterpage='informacije.php' /></span>
                         </div>
                         <div class="question-mark">?</div>
                         <div class="question-mark">?</div>
@@ -36,7 +36,7 @@
                     </div>
                 </div>
                 <h3 class="contact-forms__title">Pošaljite nam e-mail</h3>
-                <p class="contact-forms__desc">Lorem Khaled Ipsum is a major key to success. The key to success is to keep your head above the water, never give up. You smart, you loyal, you a genius. It’s on you how you want to live your life.</p>
+                <p class="contact-forms__desc">Imate pitanje, ne znate koji je motor za Vas? Slobodno nam se obratite, a mi ćemo Vas kontaktirati u najkraćem mogućem rokom i nastojati odgovoriti na Vaše upite.</p>
                 <cms:form action='' method='post' id='contact'>
                     <div class="input--wrapper">
                         <div class="contact-forms__input-title">Ime i prezime</div>
@@ -85,11 +85,11 @@
                     <p>Imate pitanje, treba Vam opširniji odgovor? <b>Javite nam se.</b></p>
                     <div class="contact__card-telephone">
                         <img src="/images/iconmonstr-phone-1-24.png">
-                        <span>+385 91 132 3213</span>
+                        <span><cms:get_custom_field 'broj_telefona' masterpage='informacije.php' /></span>
                     </div>
                     <div class="contact__card-mail">
                         <img src="/images/iconmonstr-email-2-24.png">
-                        <span>motoexpert.hr@gmail.com</span>
+                        <span><cms:get_custom_field 'email_tvrtke' masterpage='informacije.php' /></span>
                     </div>
                     <div class="question-mark">?</div>
                     <div class="question-mark">?</div>
@@ -98,7 +98,9 @@
                 </div>
             </div>
         </div>
-        <cms:embed 'footer.php' />
+        <cms:pages masterpage='footer.php'>
+            <cms:embed 'footer.php' />
+        </cms:pages>
     </body>
 </html>
 <?php COUCH::invoke(); ?>

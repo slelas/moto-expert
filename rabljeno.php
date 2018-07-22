@@ -12,8 +12,8 @@
     <body>
         <cms:embed 'nav.php' />
         <header class="motor-list__header">
-            <h1 class="motor-list__header-title">Super veliki naslov o predobrim motorima</h1>
-            <h3 class="motor-list__header-desc">Lorem Khaled Ipsum is a major key to success. Look at the sunset, life is amazing, life is beautiful, life is what you make it.</h3>
+            <h1 class="motor-list__header-title">Posebno izabrana ponuda motora</h1>
+            <h3 class="motor-list__header-desc">Pogledajte listu i odaberite najbolji motor za sebe</h3>
         </header>
         <div class="motor-list__filters-collapsible">
             <input id="collapsible" class="toggle" type="checkbox">
@@ -26,7 +26,6 @@
                         <img class="motor-list__filter-img" src="/images/svi-motocikli-3.svg">
                     </div>
                     <span class="motor-list__filter-title">SVI MOTOCIKLI</span>
-                    <div class="motor-list__filter-indicator"></div>
                 </a>
                 <a href="<cms:link 'rabljeno.php' />" class="motor-list__filter motor-list__filter--state-active">
                     <div class="motor-list__filter-imgs">
@@ -34,6 +33,7 @@
                         <img class="motor-list__filter-img" src="/images/rabljeni-motocikli-2-bijelo.svg">
                     </div>
                     <span class="motor-list__filter-title" style="color: white;">RABLJENI MOTOCIKLI</span>
+                    <div class="motor-list__filter-indicator"></div>
                 </a>
                 <a href="<cms:link 'novo.php' />" class="motor-list__filter">
                     <div class="motor-list__filter-imgs">
@@ -57,7 +57,7 @@
                     <div class="card__main-info-container">
                         <div class="card__main-info clearfix">
                             <div class="card__main-info-left">
-                                <div class="card__category"><cms:show k_page_foldertitle /> VOZILO</div>
+                                <div class="card__category"><cms:show k_page_foldertitle /></div>
                                 <div class="card__title"><cms:show k_page_title /></div>
                                 <div class="card__date"><b>Objavljeno:</b> <cms:date k_page_date format='d.m.Y.' /></div>
                             </div>
@@ -82,7 +82,7 @@
                                 </div>
                                 <div class="card__specification-text">
                                     <span class="specification-text__category">KILOMETRI</span>
-                                    <span class="specification-text__info"><cms:show kilometri /> km</span>
+                                    <span class="specification-text__info"><cms:number_format kilometri thousands_separator=' ' decimal_precision='0' /> km</span>
                                 </div>
                             </div>
                             <div class="card__specification">
@@ -112,6 +112,7 @@
                     </div>
                 </a>
             </cms:pages>
+            <span class="no-more">Nema više vozila u ovoj listi.</span>
         </section>
         <cms:embed 'footer.php' />
     </body>

@@ -56,22 +56,6 @@ RewriteRule ^novo/([1-2]\d{3})/(?:(0[1-9]|1[0-2])/(?:(0[1-9]|1[0-9]|2[0-9]|3[0-1
 RewriteRule ^novo/[^\.]*?([^/\.]*)/$ novo.php?fname=$1 [L,QSA]
 RewriteRule ^novo/[^\.]*?([^/\.]*)$ "$0/" [R=301,L,QSA]
 
-#nav.php
-RewriteRule ^nav$ "$0/" [R=301,L,QSA]
-RewriteRule ^nav/$ nav.php [L,QSA]
-RewriteRule ^nav/.*?([^\.\/]*)\.html$ nav.php?pname=$1 [L,QSA]
-RewriteRule ^nav/([1-2]\d{3})/(?:(0[1-9]|1[0-2])/(?:(0[1-9]|1[0-9]|2[0-9]|3[0-1])/)?)?$ nav.php?d=$1$2$3 [L,QSA]
-RewriteRule ^nav/[^\.]*?([^/\.]*)/$ nav.php?fname=$1 [L,QSA]
-RewriteRule ^nav/[^\.]*?([^/\.]*)$ "$0/" [R=301,L,QSA]
-
-#naslovnica.php
-RewriteRule ^naslovnica$ "$0/" [R=301,L,QSA]
-RewriteRule ^naslovnica/$ naslovnica.php [L,QSA]
-RewriteRule ^naslovnica/.*?([^\.\/]*)\.html$ naslovnica.php?pname=$1 [L,QSA]
-RewriteRule ^naslovnica/([1-2]\d{3})/(?:(0[1-9]|1[0-2])/(?:(0[1-9]|1[0-9]|2[0-9]|3[0-1])/)?)?$ naslovnica.php?d=$1$2$3 [L,QSA]
-RewriteRule ^naslovnica/[^\.]*?([^/\.]*)/$ naslovnica.php?fname=$1 [L,QSA]
-RewriteRule ^naslovnica/[^\.]*?([^/\.]*)$ "$0/" [R=301,L,QSA]
-
 #motor.php
 RewriteRule ^motor$ "$0/" [R=301,L,QSA]
 RewriteRule ^motor/$ motor.php [L,QSA]
@@ -87,6 +71,14 @@ RewriteRule ^kontakt/.*?([^\.\/]*)\.html$ kontakt.php?pname=$1 [L,QSA]
 RewriteRule ^kontakt/([1-2]\d{3})/(?:(0[1-9]|1[0-2])/(?:(0[1-9]|1[0-9]|2[0-9]|3[0-1])/)?)?$ kontakt.php?d=$1$2$3 [L,QSA]
 RewriteRule ^kontakt/[^\.]*?([^/\.]*)/$ kontakt.php?fname=$1 [L,QSA]
 RewriteRule ^kontakt/[^\.]*?([^/\.]*)$ "$0/" [R=301,L,QSA]
+
+#informacije.php
+RewriteRule ^informacije$ "$0/" [R=301,L,QSA]
+RewriteRule ^informacije/$ informacije.php [L,QSA]
+RewriteRule ^informacije/.*?([^\.\/]*)\.html$ informacije.php?pname=$1 [L,QSA]
+RewriteRule ^informacije/([1-2]\d{3})/(?:(0[1-9]|1[0-2])/(?:(0[1-9]|1[0-9]|2[0-9]|3[0-1])/)?)?$ informacije.php?d=$1$2$3 [L,QSA]
+RewriteRule ^informacije/[^\.]*?([^/\.]*)/$ informacije.php?fname=$1 [L,QSA]
+RewriteRule ^informacije/[^\.]*?([^/\.]*)$ "$0/" [R=301,L,QSA]
 
 #gallery.php
 RewriteRule ^gallery$ "$0/" [R=301,L,QSA]

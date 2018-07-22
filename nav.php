@@ -21,6 +21,7 @@
             <cms:if k_template_name=='rabljeno.php'>navigation__item--state-active</cms:if>
             <cms:if k_template_name=='u-dolasku.php'>navigation__item--state-active</cms:if>
             <cms:if k_template_name=='motor.php'>navigation__item--state-active</cms:if>">Ponuda motora</li></a>
+            <a href="<cms:link 'kontakt.php' />" class="navigation__item--desktop"><li class="navigation__item">Kontakt</li></a>
         </ul>
     </div>
 </nav>
