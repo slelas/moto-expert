@@ -3,3 +3,13 @@ Mjesto rodenja Split
 PIN: 4539
 
 no-reply@motoexpert.hr : 7iD17XOIttib
+
+- navigacija hover
+- provjerite motore u ponudi: potamnit pozadinu, strelica desno
+- da se digne njuskalo i strelica u desno
+- pagination
+- gallery
+- tekst za gori u headeru
+- tekst za profesionalno
+- nasa najbolja reklama
+- vrste motora
