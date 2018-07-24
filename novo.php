@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="/dist/main.min.css">
         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,900" rel="stylesheet">
         <title>Novo | Moto Expert</title>
+        <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"/>
     </head>
     <body>
         <cms:embed 'nav.php' />

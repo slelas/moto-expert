@@ -10,7 +10,7 @@
         <title>Kontakt | Moto Expert</title>
         <script src="/scripts/jquery-3.3.1.min.js"></script>
         <script src="/scripts/script.js"></script>
-        <script type="text/javascript" src="js/contact.js"></script>
+        <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"/>
     </head>
     <body>
         <cms:embed 'nav.php' />
