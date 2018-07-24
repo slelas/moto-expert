@@ -20,7 +20,7 @@
                     <img class="redirect__main-info-image" src="/images/motor/svi-motori.png">
                     <div class="redirect__main-info">
                         <h2>Nudimo najbolja motorna vozila za svaki ukus vozača!</h2>
-                        <p>Lorem Khaled Ipsum is a major key to success. Look at the sunset, life is amazing, life is beautiful, life is what you make it. It’s important to use cocoa butter.</p>
+                        <p>Uz Moto Expert pronađite motor po svojoj želji i mjeri za odličnu cijenu.</p>
                     </div>
                 </div>
                 <div class="redirect__side-info-container">
@@ -47,7 +47,7 @@
                 <img class="redirect__main-info-image" src="/images/motor/svi-motori.png">
                 <div class="redirect__main-info">
                     <h2>Nudimo najbolja motorna vozila za svaki ukus vozača!</h2>
-                    <p>Lorem Khaled Ipsum is a major key to success. Look at the sunset, life is amazing, life is beautiful, life is what you make it. It’s important to use cocoa butter.</p>
+                    <p>Uz Moto Expert pronađite motor po svojoj želji i mjeri za odličnu cijenu.</p>
                 </div>
             </div>
             <div class="redirect__side-info-container">
@@ -114,7 +114,7 @@
                         <img src="/images/motor/why-3.png">
                         <div class="why__card-wrapper">
                             <h3>Profesionalno</h3>
-                            <p>Lorem Khaled Ipsum is a major key to success. Look at the sunset.</p>
+                            <p>Godine iskustva vode nas u biranju najkvalitetnijih motora za hrvatsko tržište.</p>
                         </div>
                     </div>
                 </div>
