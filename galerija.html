@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/dist/main.min.css">
+    <link rel="stylesheet" href="/styles/vendor/lightgallery.css">
+    <script src="/scripts/jquery-3.3.1.min.js"></script>
+    <script src="/scripts/lightgallery.min.js"></script>
+    <script src="bower_components/lightgallery.js/demo/js/lg-fullscreen.min.js"></script>
+    <title>Document</title>
+    
+</head>
+    <body><script>
+
+        // $('#galerija').lightGallery({
+        //             selector: '.vehicle__photo'
+        //         });
+                lightGallery(document.getElementById('galerija'));
+            </script>
+        <div class="mobile-flex" id="galerija">
+            <a id="selector2" class="vehicle__photo" href="images/moto-guzzi.jpg" style="background-image: url('/images/moto-guzzi.jpg');"><img src="images/moto-guzzi.jpg" style="display: none;"></a>
+            <a id="selector2" class="vehicle__photo" href="images/moto-guzzi.jpg" style='background-image: url("/images/moto-guzzi.jpg");'><img src="images/moto-guzzi.jpg" style="display: none;"></a>
+            <a id="selector2" class="vehicle__photo" href="images/moto-guzzi.jpg" style='background-image: url("/images/moto-guzzi.jpg");'><img src="images/moto-guzzi.jpg" style="display: none;"></a>
+        </div>
+
+        
+    </body>
+</html>

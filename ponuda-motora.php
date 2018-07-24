@@ -51,7 +51,7 @@
         </div>
         <section class="motor-list">
             <h2 class="motor-list__main-title">Lista vozila</h3>
-            <cms:pages masterpage='motor.php' limit='10' paginate='0'>
+            <cms:pages masterpage='motor.php' limit='15' paginate='0'>
                 <a href="<cms:show k_page_link />" class="motor-list__card <cms:if k_page_foldertitle=='Prodano'>sold</cms:if> clearfix">
                     <div class="card__image" style='background-image: url("<cms:show motor_slika />");'></div>
                     <div class="card__main-info-container">

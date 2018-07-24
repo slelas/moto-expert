@@ -1,5 +1,6 @@
 .samozanav {
-    background-image: url("/images/pexels-photo-980382.jpeg");
+    // background-image: url("/images/pexels-photo-980382.jpeg");
+    background-image: url("/images/bmw_hp4_race_2-1920x1080.jpg");
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -520,11 +521,51 @@ h3 {
         margin-bottom: 10px;
     }
 
-    .njuskalo, .nacini-placanja, .redirect__side-info, .customer__redirect {
+    .redirect__side-info {
         transition: transform ease-in-out .25s;
 
         &:hover {
             transform: scale(1.05);
+        }
+    }
+
+    .njuskalo, .nacini-placanja {
+        transition: all ease-in-out .25s;
+
+        .njuskalo__link, .nacini-placanja__link {
+            img {
+                transition: all ease-in-out .25s;
+            }
+        }
+
+        &:hover {
+            transform: translateY(-5px);
+
+            .njuskalo__link, .nacini-placanja__link {
+                img {
+                    transform: translateX(2px);
+                }
+            }
+        }
+    }
+
+    .customer__redirect {
+        transition: all ease-in-out .25s;
+
+        .customer__redirect-bottom {
+            img {
+                transition: margin-left ease-in-out .25s;
+            }
+        }
+
+        &:hover {
+            background-color: rgba(196, 30, 34, 0.25);
+
+            .customer__redirect-bottom {
+                img {
+                    margin-left: 10px;
+                }
+            }
         }
     }
 }
@@ -669,6 +710,10 @@ h3 {
 
         &:nth-of-type(2), &:nth-of-type(3), &:nth-of-type(4), &:nth-of-type(5),  {
             display: none;
+        }
+
+        &:nth-of-type(5) {
+            margin-right: 30px;
         }
     }
 

@@ -208,7 +208,7 @@
             <div class="customers__wrapper">
                 <div class="customers__container customers__container--desktop">
                     <h3>Naša najbolja reklama su naši zadovoljni kupci</h3>
-                    <p>Lorem Khaled Ipsum is a major key to success. The weather is amazing, walk with me through the pathway of more success. Take this journey with me, Lion! Cloth talk. To succeed you must believe.</p>
+                    <p>S ciljem uvoza najkvalitetnijih motornih vozila, u proteklih 2 godine iskustva, vidjeli smo preko 50 nasmijanih lica vlasnika vozila kupljenih kod nas.</p>
                     <a class="customer__redirect customer__redirect--desktop clearfix" href="<cms:link 'ponuda-motora.php' />">
                         <img class="customer__redirect-icon" src="/images/customer-redirect.png">
                         <div class="customer__redirect-text">

@@ -49,10 +49,11 @@
     }
 
     .motor-list__card {
-        transition: transform ease-in-out .25s;
+        transition: all ease-in-out .25s;
 
         &:hover {
             transform: scale(1.02);
+            box-shadow: 0 0 23px 0 rgba(15,43,55,.25);
         }
     }
 

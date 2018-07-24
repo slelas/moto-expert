@@ -103,10 +103,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="/dist/main.min.css">
+        <link rel="stylesheet" href="/styles/vendor/lightgallery.css">
         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,900" rel="stylesheet">
         <title><cms:show k_page_title /> - Moto Expert</title>
     </head>
     <body>
+        <script src="/scripts/lightgallery.min.js"></script>
+        <script>lightGallery(document.getElementById('selector2')); $('#selector2').lightGallery({
+                selector: 'this'
+            });</script>
         <cms:embed 'nav.php' />
         <header class="header" style='background-image: url("<cms:show motor_slika />");'></header>
         <div class="vehicle">
@@ -405,9 +410,9 @@
             </div>
             <div class="vehicle__equipment-section">
                 <h3>Fotografije</h3>
-                <div class="mobile-flex">
+                <div class="mobile-flex" id="galerija">
                     <cms:reverse_related_pages 'motor_image' masterpage='gallery.php' >
-                        <a class="vehicle__photo" target="_blank" href="<cms:show gg_image />" style='background-image: url("<cms:show gg_image />");'></a>
+                        <a id="selector2" class="vehicle__photo" target="_blank" href="<cms:show gg_image />" style='background-image: url("<cms:show gg_image />");'></a>
                     </cms:reverse_related_pages>
                 </div>
             </div>

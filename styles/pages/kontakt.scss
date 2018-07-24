@@ -168,6 +168,12 @@
     color: white;
     font-weight: 600;
     font-size: 18px;
+    cursor: pointer;
+    transition: background-color ease-in-out .25s;
+
+    &:hover {
+        background-color: #df2016;
+    }
 }
 
 @media screen and (min-width: 425px) {
