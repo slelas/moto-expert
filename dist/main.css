@@ -344,7 +344,8 @@ html {
   .vehicle__specification-text .specification-text__info {
     font-size: 20px;
     font-weight: 600;
-    color: #1c1616; }
+    color: #1c1616;
+    width: 120px; }
 
 .vehicle__equipment-section {
   padding: 30px 60px;
@@ -856,7 +857,8 @@ html {
     height: 200px;
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: cover; }
+    background-size: cover;
+    background-image: url("/images/no-image-available2.png"); }
   .motor-list__card .card__main-info {
     padding: 15px;
     border-bottom: 1px solid #cacaca; }
@@ -1477,11 +1479,11 @@ h3 {
   .customer__card:nth-of-type(2) {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.45)), url("/images/d-jadresic.jpg"); }
   .customer__card:nth-of-type(3) {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.45)), url("/images/s-perko.jpg"); }
-  .customer__card:nth-of-type(4) {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.45)), url("/images/g-radetic.jpg"); }
+  .customer__card:nth-of-type(4) {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.45)), url("/images/balija.jpg"); }
   .customer__card:nth-of-type(5) {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.45)), url("/images/r-babo.jpg");
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.45)), url("/images/j-garbin.jpg");
     margin-right: 0; }
 
 .customers__slider {
@@ -1522,7 +1524,8 @@ h3 {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  top: -10px; }
+  top: -10px;
+  width: 140px; }
 
 .card__stars {
   margin-top: 8px;

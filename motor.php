@@ -361,7 +361,7 @@
                             <span class="specification-text__info"><cms:show vlasnik /></span>
                         </div>
                     </div>
-                    <div class="vehicle__specification">
+                    <!-- <div class="vehicle__specification">
                         <div class="vehicle__specification-container">
                             <img src="/images/motor/vrsta-motora.png" alt="Vrsta motora ikonica">
                         </div>
@@ -369,7 +369,7 @@
                             <span class="specification-text__category">VRSTA MOTORA</span>
                             <span class="specification-text__info"><cms:show vrsta_motora /></span>
                         </div>
-                    </div>
+                    </div> -->
                     <div class="vehicle__specification">
                         <div class="vehicle__specification-container">
                             <img src="/images/motor/kilometri.png" alt="Kilometri motora ikonica">
